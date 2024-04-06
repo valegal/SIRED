@@ -1,11 +1,11 @@
 import Logout from "../components/Logout"
 
-function Datos() {
+function DatosAdmin() {
   return (
-    <div>Datos
+    <div>DatosAdmin
       <Logout></Logout>
     </div>
   )
 }
 
-export default Datos
+export default DatosAdmin

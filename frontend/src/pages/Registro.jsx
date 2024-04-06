@@ -82,7 +82,7 @@ const Registro = () => {
           <button type="submit" className="w-full bg-gradient-to-r from-purple-400 to-pink-500 text-white py-2 px-4 rounded-md hover:from-purple-600 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Registrarse</button>
         </form>
         <div className="mt-4">
-          <p className="text-sm text-gray-600">¿Aún no tienes cuenta? <Link to="/iniciar-sesion" className="text-purple-500">Regístrate aquí</Link></p>
+          <p className="text-sm text-gray-600">¿Aún no tienes cuenta? <Link to="/login" className="text-purple-500">Regístrate aquí</Link></p>
         </div>
       </div>
     </div>

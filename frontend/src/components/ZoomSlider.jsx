@@ -56,10 +56,10 @@ const ZoomSlider = () => {
       <div className="absolute inset-x-0 bottom-40 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-6xl font-bold text-white mb-6">Semillero de Investigación en Recursos Energéticos Distribuidos</h1>
-          <h2 className="text-xl font-semibold text-white">Entender y estudiar los elementos y componentes para la integración de la generación distribuida en los Sistemas de Distribución de la Energía Eléctrica, considerando los procesos de consumo de los usuarios finales en las redes de explotación.</h2>
+          <h2 className="text-xl font-semibold font-sans text-white">Entender y estudiar los elementos y componentes para la integración de la generación distribuida en los Sistemas de Distribución de la Energía Eléctrica, considerando los procesos de consumo de los usuarios finales en las redes de explotación.</h2>
           
           <Link to="/datos">
-          <button className="mt-8 px-6 py-2 text-md bg-white bg-opacity-70 text-black rounded-lg font-mono transition ease-in-out hover:bg-white delay-150 hover:scale-105">Ir a datos del Sistema Griv</button></Link>
+          <button className="mt-8 px-6 py-2 text-md bg-white bg-opacity-70 text-gray-900 rounded-lg font-mono transition ease-in-out hover:bg-white delay-150 hover:scale-105">Ir a datos del Sistema Griv</button></Link>
         </div>
       </div>
     </div>

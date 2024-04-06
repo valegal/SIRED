@@ -1,11 +1,11 @@
 import Logout from "../components/Logout"
 
-function Datos() {
+function DatosPregrado() {
   return (
-    <div>Datos
+    <div>DatosPregrado
       <Logout></Logout>
     </div>
   )
 }
 
-export default Datos
+export default DatosPregrado
