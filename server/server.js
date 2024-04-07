@@ -16,6 +16,9 @@ app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
 
+
+// --------------------- Autenticación & Autorizacion basado en roles ---------------------------
+
 // Registro
 app.post('/registro', async (req, res) => {
     try {
@@ -139,6 +142,23 @@ app.get('/logout', (req, res) => {
 
     return res.json({ status: "Success" });
 });
+
+// --------------------- Tablas ---------------------------
+
+// Obtener todos los datos de los usuarios
+app.get('/usuarios/todos', (req, res) => {
+    db.query(
+        'SELECT * FROM usuarios',
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener los datos de los usuarios');
+            }
+            res.status(200).send(result);
+        }
+    );
+});
+
 
 
 app.listen(port, () => {

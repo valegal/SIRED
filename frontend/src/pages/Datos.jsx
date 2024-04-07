@@ -1,5 +1,7 @@
 import Logout from "../components/Logout"
 import { Link } from "react-router-dom"
+// import Example from "../components/datos/Example";
+
 
 function Datos() {
 
@@ -25,6 +27,10 @@ function Datos() {
       </Link>
 
       </div>  
+
+      {/* <Example></Example> */}
+
+
     </div>
   )
 }

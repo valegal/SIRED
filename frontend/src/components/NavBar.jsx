@@ -6,12 +6,12 @@ const Navbar = () => {
           <div className="text-5xl font-serif font-bond italic mx-auto pl-64 tracking-wide">SIRED</div>
           <div>
             <Link to="/login">
-            <button className="bg-lime-200 border-2 border-lime-200 hover:border-lime-600 hover:bg-lime-600 text-gray-800 font-semibold py-2 px-4 rounded mr-2">
+            <button className="bg-lime-200 border-2 border-lime-200 hover:border-lime-600 hover:bg-lime-600 text-lime-700 font-semibold py-2 px-4 rounded mr-2">
               Iniciar sesión
             </button>
             </Link>
             <Link to="/registro">
-            <button className="bg-lime-300 bg-opacity-10 border-2 hover:border-lime-600 border-lime-200 hover:bg-lime-600 text-gray-800 font-semibold py-2 px-4 rounded">
+            <button className="bg-lime-300 bg-opacity-10 border-2 hover:border-lime-600 border-lime-200 hover:bg-lime-600 text-lime-700 font-semibold py-2 px-4 rounded">
               Registrarse
             </button>
             </Link>
