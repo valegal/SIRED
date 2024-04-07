@@ -1,4 +1,5 @@
 import NavUser from "../../components/NavUser"
+import RutaActual from "../extras/RutaActual"
 
 function MedicionesAdmin() {
   return (
@@ -6,6 +7,7 @@ function MedicionesAdmin() {
     <div>
       <NavUser></NavUser>
       </div>
+      <RutaActual></RutaActual>
     </div>
   )
 }

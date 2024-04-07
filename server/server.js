@@ -57,6 +57,11 @@ app.post('/registro', async (req, res) => {
     }
 });
 
+
+
+
+
+
 // Obtener todos los correos electrónicos de los usuarios
 app.get('/usuarios', (req, res) => {
     db.query(
@@ -108,7 +113,7 @@ app.post('/login', async (req, res) => {
 // Middleware de autenticación
 const authenticateJWT = (req, res, next) => {
     const token = req.headers.authorization?.split(' ')[1];
-    const userRole = req.cookies.userRole; // Leer el rol desde la cookie
+    const userRole = req.cookies.userRole; 
     if (!token || !userRole) {
         return res.status(401).send('Se requiere autenticación');
     }
@@ -116,39 +121,29 @@ const authenticateJWT = (req, res, next) => {
         if (err) {
             return res.status(403).send('Token inválido');
         }
-        req.user = { ...decoded, role: userRole }; // Agregar el rol al objeto req.user
+        req.user = { ...decoded, role: userRole };
         next();
     });
 };
 
 app.use((req, res, next) => {
-    // Verificar si se intenta acceder a una ruta protegida sin autenticación
     if (req.path.startsWith('/datos') && !req.headers.authorization) {
         return res.status(401).send('Se requiere autenticación');
     }
     next();
 });
 
-// Aplicar el middleware de autenticación JWT a las rutas protegidas
 app.use('/datos', authenticateJWT);
 
 // Logout
 app.get('/logout', (req, res) => {
-    // Borrar la cookie 'userRole'
     res.clearCookie('userRole', { secure: true });
 
-    // Invalidar el token JWT si existe en las cookies del cliente
     if (req.cookies.token) {
         res.clearCookie('token', { secure: true });
     }
 
     return res.json({ status: "Success" });
-});
-
-// Endpoint para obtener los datos del usuario actual
-app.get('/actual', authenticateJWT, (req, res) => {
-    const { id, role, nombres, apellidos, vinculacion } = req.user;
-    res.status(200).send({ id, role, nombres, apellidos, vinculacion });
 });
 
 
@@ -168,6 +163,45 @@ app.get('/usuarios/todos', (req, res) => {
     );
 });
 
+
+// Obtener información de un usuario por su ID sin necesidad de autenticación
+app.get('/usuarios/:id', (req, res) => {
+    const userId = req.params.id;
+    db.query(
+        'SELECT * FROM usuarios WHERE id = ?',
+        [userId],
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener la información del usuario');
+            }
+            if (result.length === 0) {
+                return res.status(404).send('Usuario no encontrado');
+            }
+            const usuario = result[0];
+            res.status(200).send(usuario);
+        }
+    );
+});
+
+// Eliminar un usuario por su ID sin necesidad de autenticación
+app.delete('/usuarios/:id', (req, res) => {
+    const userId = req.params.id;
+    db.query(
+        'DELETE FROM usuarios WHERE id = ?',
+        [userId],
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al eliminar el usuario');
+            }
+            if (result.affectedRows === 0) {
+                return res.status(404).send('Usuario no encontrado');
+            }
+            res.status(200).send('Usuario eliminado correctamente');
+        }
+    );
+});
 
 
 app.listen(port, () => {
