@@ -19,19 +19,19 @@ function Login() {
                   localStorage.setItem('token', res.data.token);
                   localStorage.setItem('role', res.data.role); 
                   navigate('/datos');
-                  // switch (res.data.role) {
-                  //     case 'pregrado':
-                  //         navigate('/datos/pregrado');
-                  //         break;
-                  //     case 'posgrado':
-                  //         navigate('/datos/posgrado');
-                  //         break;
-                  //     case 'administrador':
-                  //         navigate('/datos/administrador');
-                  //         break;
-                  //     default:
-                  //         break;
-                  // }
+                  switch (res.data.role) {
+                      case 'pregrado':
+                          navigate('/datos/pregrado');
+                          break;
+                      case 'posgrado':
+                          navigate('/datos/posgrado');
+                          break;
+                      case 'administrador':
+                          navigate('/datos/administrador');
+                          break;
+                      default:
+                          break;
+                  }
               } else {
                   Swal.fire({
                       icon: 'error',

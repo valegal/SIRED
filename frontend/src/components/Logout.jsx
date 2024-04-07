@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Icon } from '@iconify/react';
 
 function Logout() {
     const handleLogout = async () => {
@@ -13,9 +14,13 @@ function Logout() {
     };
 
     return (
-        <button className="bg-red-600 text-white rounded-lg px-4 m-2" onClick={handleLogout}>
-            SALIR
-        </button>
+        <div className="flex items-center justify-end">
+            <div className="flex items-center bg-siredoscuro shadow-md shadow-lime-500 text-white rounded-lg px-2 py-1 m-2 hover:shadow-xl hover:cursor-pointer" onClick={handleLogout}>
+                
+                <Icon icon="material-symbols:logout-sharp" width="24" height="24"  style={{color: 'white'}} />
+                <span className="font-semibold ml-2">SALIR</span>
+            </div>
+        </div>
     );
 }
 

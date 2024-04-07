@@ -72,7 +72,7 @@ app.get('/usuarios', (req, res) => {
     );
 });
 
-// Endpoit de Inicio de sesión /login
+// Endpoint de Inicio de sesión /login
 app.post('/login', async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -90,7 +90,8 @@ app.post('/login', async (req, res) => {
                 const match = await bcrypt.compare(password, usuario.password);
                 if (match) {
                     const token = jwt.sign({ id: usuario.id, role: usuario.role }, process.env.JWT_SECRET);
-                    res.cookie('token', token, { maxAge: 900000, httpOnly: true, secure: true }); 
+                    res.cookie('token', token, { maxAge: 900000, httpOnly: true, secure: true });
+                    res.cookie('userRole', usuario.role, { maxAge: 900000, httpOnly: true, secure: true });
                     return res.status(200).send({ token, role: usuario.role });
                 }
                 return res.status(401).send('Nombre de usuario o contraseña incorrecta');
@@ -101,6 +102,7 @@ app.post('/login', async (req, res) => {
         res.status(500).send('Inicio de sesión fallido');
     }
 });
+
 
 
 // Middleware de autenticación
@@ -142,6 +144,13 @@ app.get('/logout', (req, res) => {
 
     return res.json({ status: "Success" });
 });
+
+// Endpoint para obtener los datos del usuario actual
+app.get('/actual', authenticateJWT, (req, res) => {
+    const { id, role, nombres, apellidos, vinculacion } = req.user;
+    res.status(200).send({ id, role, nombres, apellidos, vinculacion });
+});
+
 
 // --------------------- Tablas ---------------------------
 

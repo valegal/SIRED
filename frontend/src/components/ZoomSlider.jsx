@@ -25,6 +25,8 @@ const ZoomSlider = () => {
     setCurrentIndex(index);
   };
 
+  const rol = localStorage.getItem('role');
+
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {images.map((img, index) => (
@@ -58,8 +60,29 @@ const ZoomSlider = () => {
           <h1 className="text-6xl font-bold text-white mb-6">Semillero de Investigación en Recursos Energéticos Distribuidos</h1>
           <h2 className="text-xl font-semibold font-sans text-white">Entender y estudiar los elementos y componentes para la integración de la generación distribuida en los Sistemas de Distribución de la Energía Eléctrica, considerando los procesos de consumo de los usuarios finales en las redes de explotación.</h2>
           
-          <Link to="/datos">
-          <button className="mt-8 px-6 py-2 text-md bg-white bg-opacity-70 text-gray-900 rounded-lg font-mono transition ease-in-out hover:bg-white delay-150 hover:scale-105">Ir a datos del Sistema Griv</button></Link>
+          {rol ? (
+            <>
+              {rol === 'pregrado' && (
+                <Link to="/datos/pregrado">
+                  <button className="mt-8 px-6 py-2 text-md bg-white bg-opacity-70 text-gray-900 rounded-lg font-mono transition ease-in-out hover:bg-white delay-150 hover:scale-105">Ir a datos del Sistema Griv (Pregrado)</button>
+                </Link>
+              )}
+              {rol === 'posgrado' && (
+                <Link to="/datos/posgrado">
+                  <button className="mt-8 px-6 py-2 text-md bg-white bg-opacity-70 text-gray-900 rounded-lg font-mono transition ease-in-out hover:bg-white delay-150 hover:scale-105">Ir a datos del Sistema Griv (Posgrado)</button>
+                </Link>
+              )}
+              {rol === 'administrador' && (
+                <Link to="/datos/administrador">
+                  <button className="mt-8 px-6 py-2 text-md bg-white bg-opacity-70 text-gray-900 rounded-lg font-mono transition ease-in-out hover:bg-white delay-150 hover:scale-105">Ir a datos del Sistema Griv (Administrador)</button>
+                </Link>
+              )}
+            </>
+          ) : (
+            <Link to="/login">
+              <button className="mt-8 px-6 py-2 text-md bg-white bg-opacity-70 text-gray-900 rounded-lg font-mono transition ease-in-out hover:bg-white delay-150 hover:scale-105">Ir a datos del Sistema Griv</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
