@@ -17,20 +17,21 @@ function Login() {
           .then(res => {
               if (res.status === 200) {
                   localStorage.setItem('token', res.data.token);
-                  localStorage.setItem('role', res.data.role); // Guardar el token en el almacenamiento local
-                  switch (res.data.role) {
-                      case 'pregrado':
-                          navigate('/datos/pregrado');
-                          break;
-                      case 'posgrado':
-                          navigate('/datos/posgrado');
-                          break;
-                      case 'administrador':
-                          navigate('/datos/administrador');
-                          break;
-                      default:
-                          break;
-                  }
+                  localStorage.setItem('role', res.data.role); 
+                  navigate('/datos');
+                  // switch (res.data.role) {
+                  //     case 'pregrado':
+                  //         navigate('/datos/pregrado');
+                  //         break;
+                  //     case 'posgrado':
+                  //         navigate('/datos/posgrado');
+                  //         break;
+                  //     case 'administrador':
+                  //         navigate('/datos/administrador');
+                  //         break;
+                  //     default:
+                  //         break;
+                  // }
               } else {
                   Swal.fire({
                       icon: 'error',

@@ -13,7 +13,7 @@ function Logout() {
     };
 
     return (
-        <button className="btn btn-primary" onClick={handleLogout}>
+        <button className="bg-red-600 text-white rounded-lg px-4 m-2" onClick={handleLogout}>
             SALIR
         </button>
     );
