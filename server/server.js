@@ -203,6 +203,90 @@ app.delete('/usuarios/:id', (req, res) => {
     );
 });
 
+//Endpoint de tabla de mediciones
+app.get('/medicionestodas', (req, res) => {
+    db.query(
+        'SELECT * FROM mediciones',
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener los datos de las mediciones');
+            }
+            res.status(200).send(result);
+        }
+    );
+});
+
+app.get('/medicionesconteo', (req, res) => {
+    db.query(
+        'SELECT COUNT(*) as total FROM mediciones',
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener la cantidad de filas de la tabla mediciones');
+            }
+            res.status(200).send({ total: result[0].total });
+        }
+    );
+});
+
+
+
+app.get('/mediciones', (req, res) => {
+    const page = req.query.page || 1;
+    const limit = parseInt(req.query.limit) || 10; // Parsea el valor a un entero
+    const offset = (page - 1) * limit;
+    db.query(
+        'SELECT idmedicion, SUBSTRING_INDEX(fecha, " ", 1) AS fecha, SUBSTRING_INDEX(fecha, " ", -1) AS hora, tiempoLectura, equipos_idequipo FROM mediciones LIMIT ? OFFSET ?',
+        [limit, offset],
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener los datos de las mediciones');
+            }
+            res.status(200).send(result);
+        }
+    );
+});
+
+// Endpoint para obtener las variables de una medición específica
+app.get('/variables/:idmedicion', (req, res) => {
+    const idmedicion = req.params.idmedicion;
+    db.query(
+        'SELECT idmedicion, variables, equipos_idequipo FROM mediciones WHERE idmedicion = ?',
+        [idmedicion],
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener los datos de la medición');
+            }
+
+            // Formatear la columna 'variables' a formato JSON
+            const variablesJSON = result.map(row => {
+                const variablesArray = row.variables.split(';').map(parseFloat);
+                return variablesArray;
+            });
+
+            // Construir un nuevo objeto con las tres columnas
+            const data = variablesJSON.map((variables, index) => ({
+                idmedicion: result[index].idmedicion,
+                variables: variables,
+                equipos_idequipo: result[index].equipos_idequipo
+            }));
+
+            // Enviar la respuesta con los datos en formato JSON
+            res.status(200).send(data);
+        }
+    );
+});
+
+
+
+
+
+
+
+
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

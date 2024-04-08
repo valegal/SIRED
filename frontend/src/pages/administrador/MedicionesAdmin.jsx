@@ -1,4 +1,5 @@
 import NavUser from "../../components/NavUser"
+import TablaMediciones from "../../components/datos/TablaMediciones"
 import RutaActual from "../extras/RutaActual"
 
 function MedicionesAdmin() {
@@ -8,6 +9,7 @@ function MedicionesAdmin() {
       <NavUser></NavUser>
       </div>
       <RutaActual></RutaActual>
+      <TablaMediciones></TablaMediciones>
     </div>
   )
 }
