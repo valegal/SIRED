@@ -55,9 +55,9 @@ const TablaUsuarios = () => {
   const usuariosActuales = usuarios.slice(indicePrimerUsuario, indiceUltimoUsuario);
 
   return (
-    <div className='flex flex-col items-center mb-12'>
+    <div className='flex flex-col items-center pb-12'>
       <h1 className="text-4xl font-bold text-green-700 mt-8 my-4">Todos los usuarios</h1>
-      <div className="m-4 overflow-x-auto rounded-lg" style={{ height: tablaHeight, width: tablaWeight, overflowY: 'scroll' }}>
+      <div className="m-4 overflow-x-auto rounded-lg" style={{ height: tablaHeight, width: tablaWeight }}>
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-lime-200/40">
             <tr>
@@ -83,10 +83,10 @@ const TablaUsuarios = () => {
                 <td className="px-6 py-2 whitespace-nowrap border">{usuario.nombres}</td>
                 <td className="px-6 py-2 whitespace-nowrap border">{usuario.apellidos}</td>
                 <td className="px-6 py-2 whitespace-nowrap border">{usuario.vinculacion}</td>
-                <td className="px-6 py-2 whitespace-nowrap border cursor-pointer">
+                <td className="px-6 py-2 text-lime-800/60 hover:text-red-500 whitespace-nowrap border cursor-pointer">
                   <Icon
                     icon="material-symbols:delete"
-                    className='text-red-500/60'
+                    className=''
                     width="20"
                     height="20"
                     onClick={() => handleEliminarUsuario(usuario.id)}
