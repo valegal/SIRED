@@ -203,6 +203,31 @@ app.delete('/usuarios/:id', (req, res) => {
     );
 });
 
+// Cambiar el valor de la columna 'role' de un usuario por su ID
+app.put('/usuarios/:id/role', (req, res) => {
+    const userId = req.params.id;
+    const newRole = req.body.role; 
+
+    if (!newRole) {
+        return res.status(400).send('El nuevo valor de "role" es requerido');
+    }
+
+    db.query(
+        'UPDATE usuarios SET role = ? WHERE id = ?',
+        [newRole, userId],
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al cambiar el valor de "role"');
+            }
+            if (result.affectedRows === 0) {
+                return res.status(404).send('Usuario no encontrado');
+            }
+            res.status(200).send('Valor de "role" cambiado correctamente');
+        }
+    );
+});
+
 
 // --------------------- Tabla mediciones ---------------------------
 

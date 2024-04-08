@@ -96,7 +96,7 @@ const TablaMediciones = () => {
                             ))}
                         </tr>
                     </thead>
-                    <tbody className="bg-white divide-y divide-gray-200 text-center">
+                    <tbody className="bg-white divide-y font-mono divide-gray-200 text-center">
                         {mediciones.map((medicion) => {
                             return (
                                 <tr key={medicion.idmedicion} className="hover:bg-gray-100">

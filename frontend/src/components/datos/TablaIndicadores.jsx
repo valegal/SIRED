@@ -12,9 +12,9 @@ const Tablaindicadores = () => {
     const [tablaHeight, setTablaHeight] = useState(500);
     // eslint-disable-next-line no-unused-vars
     const [tablaWeight, setTablaWeight] = useState(1200);
+    const [searchText, setSearchText] = useState('');
     const columnas = ["idindicador","nombre","posiciones" ,"formula", "Grupo"];
 
-    const [filtro, setFiltro] = useState('');
 
     useEffect(() => {
         const obtenerindicadores = async () => {
@@ -27,7 +27,7 @@ const Tablaindicadores = () => {
         };
 
         obtenerindicadores();
-    }, [paginaActual, filtro]);
+    }, [paginaActual]);
 
     useEffect(() => {
         const obtenerConteo = async () => {
@@ -42,9 +42,14 @@ const Tablaindicadores = () => {
         obtenerConteo();
     }, []);
 
-    const handleFiltroChange = (e) => {
-        setFiltro(e.target.value);
-    };
+
+
+    const filteredIndicadores = indicadores.filter(item =>
+        item.nombre.toString().toLowerCase().includes(searchText.toLowerCase()) ||
+        item.posiciones.toString().toLowerCase().includes(searchText.toLowerCase()) ||
+        item.formula.toString().toLowerCase().includes(searchText.toLowerCase()) ||
+        item.grupos_idgrupo.toString().toLowerCase().includes(searchText.toLowerCase())
+    );
 
     return (
         <div className='flex flex-col items-center pb-4 pt-2'>
@@ -54,8 +59,8 @@ const Tablaindicadores = () => {
                 <input
                     type="text"
                     placeholder="Filtrar..."
-                    value={filtro}
-                    onChange={handleFiltroChange}
+                    value={searchText}
+                    onChange={(e) => setSearchText(e.target.value)}
                     className="px-2 py-1 rounded-lg border border-lime-700"
                 />
                 <button
@@ -70,7 +75,7 @@ const Tablaindicadores = () => {
             </div>
 
             {/* Tabla de indicadores */}
-            <div className="m-4 Srounded-lg border border-lime-700" style={{ height: tablaHeight, width: tablaWeight, overflowY: 'scroll' }}>
+            <div className="m-4 rounded-lg border border-lime-700" style={{ height: tablaHeight, width: tablaWeight, overflowY: 'scroll' }}>
             <table className="min-w-full divide-y divide-gray-200 text-sm font-mono">
 
                     <thead className="bg-lime-200 font-sans">
@@ -83,7 +88,7 @@ const Tablaindicadores = () => {
                         </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200 ">
-                        {indicadores.map((indicador) => {
+                        {filteredIndicadores.map((indicador) => {
                             return (
                                 <tr key={indicador.idindicador} className="hover:bg-gray-100">
                                     <td className=" text-center border">{indicador.idindicador}</td>
