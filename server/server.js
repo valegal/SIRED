@@ -294,7 +294,7 @@ app.get('/indicadores', (req, res) => {
         (err, result) => {
             if (err) {
                 console.error(err);
-                return res.status(500).send('Error al obtener los datos de las indicadores');
+                return res.status(500).send('Error al obtener los datos de los indicadores');
             }
             res.status(200).send(result);
         }
@@ -314,7 +314,35 @@ app.get('/indicadoresconteo', (req, res) => {
     );
 });
 
+// --------------------- Tablas grupos & equipos_has_grupos ---------------------------
 
+//Endpoint de tabla grupos
+app.get('/grupos', (req, res) => {
+    db.query(
+        'SELECT * FROM grupos',
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener los datos de los grupos');
+            }
+            res.status(200).send(result);
+        }
+    );
+});
+
+//Endpoint de tabla equipos_has_grupos
+app.get('/has', (req, res) => {
+    db.query(
+        'SELECT * FROM equipos_has_grupos',
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener los datos de equipos_has_grupos');
+            }
+            res.status(200).send(result);
+        }
+    );
+});
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
