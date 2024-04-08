@@ -7,7 +7,7 @@ function DatosAdmin() {
 
   const rol = localStorage.getItem('role');
   return (
-    <div className="bg-lime-200/20 pt-20">
+    <div className="bg-lime-200/20 pt-16">
     <div>
       <NavUser></NavUser>
       </div>
@@ -18,6 +18,8 @@ function DatosAdmin() {
       <CardsTablas></CardsTablas>
       {/* <div className="w-10/12 border-b border-dotted border-green-700/20 mx-auto my-6"></div>  */}
       <TablaUsuarios></TablaUsuarios>
+
+      
     </div>
   )
 }

@@ -9,6 +9,7 @@ function Datos() {
   return (
     <div>
      <NavUser />
+
     {/* <div className="p-2">
       <p>{rol}</p>
     </div> */}

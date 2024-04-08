@@ -147,7 +147,7 @@ app.get('/logout', (req, res) => {
 });
 
 
-// --------------------- Tablas ---------------------------
+// --------------------- Tabla usuarios ---------------------------
 
 // Obtener todos los datos de los usuarios
 app.get('/usuarios/todos', (req, res) => {
@@ -202,6 +202,9 @@ app.delete('/usuarios/:id', (req, res) => {
         }
     );
 });
+
+
+// --------------------- Tabla mediciones ---------------------------
 
 //Endpoint de tabla de mediciones
 app.get('/medicionestodas', (req, res) => {
@@ -281,10 +284,35 @@ app.get('/variables/:idmedicion', (req, res) => {
 });
 
 
+// --------------------- Tablas indicadores ---------------------------
 
 
+//Endpoint de tabla de indicadores
+app.get('/indicadores', (req, res) => {
+    db.query(
+        'SELECT * FROM indicadores',
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener los datos de las indicadores');
+            }
+            res.status(200).send(result);
+        }
+    );
+});
 
-
+app.get('/indicadoresconteo', (req, res) => {
+    db.query(
+        'SELECT COUNT(*) as total FROM indicadores',
+        (err, result) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error al obtener la cantidad de filas de la tabla indicadores');
+            }
+            res.status(200).send({ total: result[0].total });
+        }
+    );
+});
 
 
 

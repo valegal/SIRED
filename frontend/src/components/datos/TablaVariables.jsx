@@ -5,13 +5,19 @@ const TablaVariables = ({ variablesMedicion }) => {
     return (
         <div className="flex mt-6">
             <table className="min-w-full divide-y border border-collapse border-lime-500  divide-gray-200">
-                <thead className="bg-gray-50">
+                <thead className="bg-gray-50 border border-lime-500 rounded-lg">
                     <tr>
                         <th scope="col" className="px-6 py-3 text-left text-xs text-lime-700 tracking-wider">
                             Nombre Variable
                         </th>
                         <th scope="col" className="px-6 py-3 text-left text-xs  text-lime-700 tracking-wider">
                             Valor
+                        </th>
+                        <th scope="col" className="px-6 py-3 text-left text-xs  text-lime-700 tracking-wider">
+                            Conversión
+                        </th>
+                        <th scope="col" className="px-6 py-3 text-left text-xs  text-lime-700 tracking-wider">
+                            Tipo
                         </th>
                     </tr>
                 </thead>
