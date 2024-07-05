@@ -59,7 +59,7 @@ const TablaUsuarios = () => {
         'pregrado': 'Pregrado',
         'posgrado': 'Posgrado'
       },
-      inputPlaceholder: 'Selecciona un rol',
+      inputPlaceholder: '✎',
       showCancelButton: true,
       inputValidator: (value) => {
         if (!value) {
@@ -119,16 +119,16 @@ const TablaUsuarios = () => {
                     className="hover:bg-lime-200 font-bold rounded"
                     onClick={() => handleEditarRole(usuario.id)}
                   >
-                    ✏️
+                    📝
                   </button>
                 </td>
                 <td className="px-6 py-2 whitespace-nowrap border">{usuario.nombres}</td>
                 <td className="px-6 py-2 whitespace-nowrap border">{usuario.apellidos}</td>
                 <td className="px-6 py-2 whitespace-nowrap border">{usuario.vinculacion}</td>
-                <td className="px-6 py-2 text-lime-800/60 hover:text-red-500 whitespace-nowrap border cursor-pointer">
+                <td className="py-2 text-center pl-5 text-lime-800/60 hover:text-red-500 whitespace-nowrap border cursor-pointer">
                   <Icon
                     icon="material-symbols:delete"
-                    className=''
+                    className='text-center'
                     width="20"
                     height="20"
                     onClick={() => handleEliminarUsuario(usuario.id)}

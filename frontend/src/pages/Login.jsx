@@ -55,12 +55,13 @@ function Login() {
     <>
   
     
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-lime-600 to-green-700">
+  <div className="min-h-screen flex items-center justify-center bg-cover bg-center bg-[url('/primera.webp')]" >
+  <div className="absolute inset-0 bg-black opacity-50"></div>
     
-      <div className="bg-white shadow-xl rounded-lg p-8 max-w-md w-full">
+      <div className="bg-white shadow-xl z-10 rounded-lg p-8 max-w-md w-full">
       
         <h2 className="text-2xl font-bold m-4 mb-2 text-center">Iniciar sesión | datos sistema GRIPV</h2>
-        <div className='mb-4 text-end text-xs hover:cursor-pointer'>SIRED - INICIO<Link className="w-12 h-12 p-2 ml-2 rounded-full bg-lime-300" to="/">👈</Link></div>
+        <div className='mb-4 text-end text-xs hover:cursor-pointer text-green-700'>SIRED - VOLVER<Link className="w-12 h-12 p-2 ml-2 rounded-full bg-lime-100" to="/">👈</Link></div>
         <form onSubmit={handleSubmit}>
           <div className="mb-8">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
@@ -74,7 +75,7 @@ function Login() {
             onChange={e => setValues({...values, password: e.target.value})}
             className="mt-1 px-4 py-2 block w-full rounded-lg border border-indigo-200 shadow-sm focus:border-lime-300 focus:ring focus:ring-lime-200" />
           </div>
-          <button onClick={handleSubmit} type="submit" className="w-full bg-gradient-to-r from-lime-600 to-green-700 text-white py-2 px-4 rounded-full border-gray-200 hover:from-lime-600 hover:to-green-600 focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-opacity-50">Iniciar sesión</button>
+          <button onClick={handleSubmit} type="submit" className="w-full bg-gradient-to-r from-lime-600 to-green-700 text-white py-2 px-4 rounded-full border-gray-200 hover:from-lime-600 hover:to-green-600 focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-opacity-50">Ingresar</button>
         </form>
         <div className="mt-4">
           <p className="text-sm text-gray-600">¿No tienes una cuenta? <Link to="/registro" className=" text-lime-700">Registro aquí</Link></p>

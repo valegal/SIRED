@@ -49,9 +49,10 @@ const Registro = () => {
 
   
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-lime-600 to-green-700">
-      <div className="bg-white shadow-lg rounded p-8 max-w-md w-full">
-        <h2 className="text-2xl font-bold mb-6 text-center">Registro de usuario | sistema GRIPV</h2>
+    <div className="min-h-screen flex items-center justify-center bg-cover bg-center bg-[url('/primera.webp')]" >
+    <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="z-10 bg-white shadow-lg rounded p-8 max-w-md w-full">
+        <h2 className="text-2xl font-bold mb-6 text-center">Registro de usuario | datos sistema GRIPV</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
             <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">Nombres</label>
@@ -79,10 +80,10 @@ const Registro = () => {
               <option value="otro">Otro</option>
             </select>
           </div>
-          <button type="submit" className="w-full bg-gradient-to-r from-lime-600 to-green-700 text-white py-2 px-4 rounded-full hover:from-lime-600 hover:to-green-600 focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-opacity-50">Registrarse</button>
+          <button type="submit" className="w-full bg-gradient-to-r from-lime-600 to-green-700 text-white py-2 px-4 rounded-full hover:from-lime-600 hover:to-green-600 focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-opacity-50">Realizar el registro</button>
         </form>
         <div className="mt-4">
-          <p className="text-sm text-gray-600">¿Aún no tienes cuenta? <Link to="/login" className="text-lime-700">Regístrate aquí</Link></p>
+          <p className="text-sm text-gray-600">¿Ya tienes una cuenta? <Link to="/login" className="text-lime-700">Iniciar sesión</Link></p>
         </div>
       </div>
     </div>

@@ -5,10 +5,13 @@ import { Link } from "react-router-dom";
 const ZoomSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "https://i.imgur.com/Yszno5e.jpg",
-    "https://i.imgur.com/ZBzbir7.jpg",
-    "https://i.imgur.com/xpeJkkR.jpg",
-    "https://i.imgur.com/0NAc45h.jpg"
+    "/primera.webp",
+    "/segunda.webp",
+    "/cuatro.webp",
+    "/seis.webp",
+    "/tres.webp",
+    "/cinco.webp",
+    "/siete.webp",
   ];
 
   useEffect(() => {
@@ -16,7 +19,7 @@ const ZoomSlider = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [currentIndex, images.length]);
@@ -39,7 +42,7 @@ const ZoomSlider = () => {
           animate={{
             opacity: currentIndex === index ? 1 : 0,
             scale: currentIndex === index ? 1 : 1.1,
-            transition: { duration: 0.5 }
+            transition: { duration: 0.8 }
           }}
         />
       ))}
@@ -57,8 +60,8 @@ const ZoomSlider = () => {
       </div>
       <div className="absolute inset-x-0 bottom-40 text-center">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-6xl font-bold text-white mb-6">Semillero de Investigación en Recursos Energéticos Distribuidos</h1>
-          <h2 className="text-xl font-semibold font-sans text-white">Entender y estudiar los elementos y componentes para la integración de la generación distribuida en los Sistemas de Distribución de la Energía Eléctrica, considerando los procesos de consumo de los usuarios finales en las redes de explotación.</h2>
+          <h1 className="text-6xl font-bold bg-opacity-40 rounded-lg bg-black text-white decoration-black mb-6" style={{"text-shadow": "0 2px 4px rgba(0, 0, 0, 0.5)"}} >Semillero de Investigación en Recursos Energéticos Distribuidos</h1>
+          <h2 className="text-xl font-semibold text-white font-sans drop-shadow-xl" style={{"text-shadow": "2px 2px 4px rgba(0, 0, 0, 0.5)"}}>Entender y estudiar los elementos y componentes para la integración de la generación distribuida en los Sistemas de Distribución de la Energía Eléctrica, considerando los procesos de consumo de los usuarios finales en las redes de explotación.</h2>
           
           {rol ? (
             <>

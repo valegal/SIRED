@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Registro from './pages/Registro';
 import Login from './pages/Login';
-import Datos from './pages/Datos';
 import DatosPregrado from './pages/DatosPregrado';
 import DatosPosgrado from './pages/DatosPosgrado';
 import DatosAdmin from './pages/DatosAdmin';
