@@ -1,0 +1,2108 @@
+[
+  {
+    "Nombre variable": "F",
+    "# registro": 8192,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "U1",
+    "# registro": 8194,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "U2",
+    "# registro": 8196,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "U3",
+    "# registro": 8198,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Uavg",
+    "# registro": 8200,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "U12",
+    "# registro": 8202,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "U23",
+    "# registro": 8204,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "U31",
+    "# registro": 8206,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ulavg",
+    "# registro": 8208,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "IL1 (Phase A inline current)",
+    "# registro": 8210,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Il2 (Phase B inline curren)",
+    "# registro": 8212,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Il3 (Phase C incline current)",
+    "# registro": 8214,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Lavg (Average Current)",
+    "# registro": 8216,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Pins-s Inline system real power",
+    "# registro": 8218,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qin-s inline system reactive power",
+    "# registro": 8220,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Sin-s Inline system apparent power",
+    "# registro": 8222,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P Fin-s inline system power factor",
+    "# registro": 8224,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Inline System Soad Nature",
+    "# registro": 8226,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Pin-A Inline Phase B real power",
+    "# registro": 8228,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Pin-B inline phase B real power",
+    "# registro": 8230,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Pin-C inline Phase C real power",
+    "# registro": 8232,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qin-A inline phase A reactive power",
+    "# registro": 8234,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qin-B inline Phase B reactive power",
+    "# registro": 8236,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qin-C inline Phase C reactive power",
+    "# registro": 8238,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Sin-A inline A apparent power",
+    "# registro": 8240,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Sin-B inline B apparent power",
+    "# registro": 8242,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Sin-C inline C apparent power",
+    "# registro": 8244,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Pfin-A inline A power factor",
+    "# registro": 8246,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Pfin B inline B power factor",
+    "# registro": 8248,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Pfin C inline C power factor",
+    "# registro": 8250,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "A inline load nature",
+    "# registro": 8252,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "B inline load nature",
+    "# registro": 8254,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "C inline load nature",
+    "# registro": 8256,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L1 (channel 1 current)",
+    "# registro": 8448,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P1 (channel 1 real power)",
+    "# registro": 8450,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q1 (channel 1 Real power)",
+    "# registro": 8452,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S1 (channel 1 apparent power)",
+    "# registro": 8454,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF1 (Channel 1 Power Factor)",
+    "# registro": 8456,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 1 (Channel Load Nature)",
+    "# registro": 8458,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L2 (channel 2 current)",
+    "# registro": 8460,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P2 (channel 2 real power)",
+    "# registro": 8462,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q2 (channel 2 Real power)",
+    "# registro": 8464,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S2 (channel 2 apparent power)",
+    "# registro": 8466,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF2 (Channel 2 Power Factor)",
+    "# registro": 8468,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 2 (Channel Load Nature)",
+    "# registro": 8470,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L3 (channel 3 current)",
+    "# registro": 8472,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P3 (channel 3 real power)",
+    "# registro": 8474,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q3 (channel 3 Real power)",
+    "# registro": 8476,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S3 (channel 3 apparent power)",
+    "# registro": 8478,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF3 (Channel 3 Power Factor)",
+    "# registro": 8480,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 3 (Channel Load Nature)",
+    "# registro": 8482,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L4 (channel 4 current)",
+    "# registro": 8484,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P4 (channel 4 real power)",
+    "# registro": 8486,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q4 (channel 4 Real power)",
+    "# registro": 8488,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S4 (channel 4 apparent power)",
+    "# registro": 8490,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF4 (Channel 4 Power Factor)",
+    "# registro": 8492,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 4 (Channel Load Nature)",
+    "# registro": 8494,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L5 (channel 5 current)",
+    "# registro": 8496,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P5 (channel 5 real power)",
+    "# registro": 8498,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q5 (channel 5 Real power)",
+    "# registro": 8500,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S5 (channel 5 apparent power)",
+    "# registro": 8502,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF5 (Channel 5 Power Factor)",
+    "# registro": 8504,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 5 (Channel Load Nature)",
+    "# registro": 8506,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L6 (channel 6 current)",
+    "# registro": 8508,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P6 (channel 6 real power)",
+    "# registro": 8510,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q6 (channel 6 Real power)",
+    "# registro": 8512,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S6 (channel 6 apparent power)",
+    "# registro": 8514,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF6 (Channel 6 Power Factor)",
+    "# registro": 8516,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 6 (Channel Load Nature)",
+    "# registro": 8518,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L7 (channel 7 current)",
+    "# registro": 8520,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P7 (channel 7 real power)",
+    "# registro": 8522,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q7 (channel 7 Real power)",
+    "# registro": 8524,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S7 (channel 7 apparent power)",
+    "# registro": 8526,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF7 (Channel 7 Power Factor)",
+    "# registro": 8528,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 7 (Channel Load Nature)",
+    "# registro": 8530,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L8 (channel 8 current)",
+    "# registro": 8532,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P8 (channel 8 real power)",
+    "# registro": 8534,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q8 (channel 8 Real power)",
+    "# registro": 8536,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S8 (channel 8 apparent power)",
+    "# registro": 8538,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF8 (Channel 8 Power Factor)",
+    "# registro": 8540,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 8 (Channel Load Nature)",
+    "# registro": 8542,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L9 (channel 9 current)",
+    "# registro": 8544,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P9 (channel 9 real power)",
+    "# registro": 8546,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q9 (channel 9 Real power)",
+    "# registro": 8548,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S9 (channel 9 apparent power)",
+    "# registro": 8550,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF9 (Channel 9 Power Factor)",
+    "# registro": 8552,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 9 (Channel Load Nature)",
+    "# registro": 8554,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L10 (channel 10 current)",
+    "# registro": 8556,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P10 (channel 10 real power)",
+    "# registro": 8558,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q10 (channel 10 Real power)",
+    "# registro": 8560,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S10 (channel 10 apparent power)",
+    "# registro": 8562,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF10 (Channel 10 Power Factor)",
+    "# registro": 8564,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 10 (Channel Load Nature)",
+    "# registro": 8566,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L11 (channel 11 current)",
+    "# registro": 8568,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P11 (channel 11 real power)",
+    "# registro": 8570,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q11 (channel 11 Real power)",
+    "# registro": 8572,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S11 (channel 11 apparent power)",
+    "# registro": 8574,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF11 (Channel 11 Power Factor)",
+    "# registro": 8576,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 11 (Channel Load Nature)",
+    "# registro": 8578,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L12 (channel 12 current)",
+    "# registro": 8580,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P12 (channel 12 real power)",
+    "# registro": 8582,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q12 (channel 12 Real power)",
+    "# registro": 8584,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S12 (channel 12 apparent power)",
+    "# registro": 8586,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF12 (Channel 12 Power Factor)",
+    "# registro": 8588,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 12 (Channel Load Nature)",
+    "# registro": 8590,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L13 (channel 13 current)",
+    "# registro": 8592,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P13 (channel 13 real power)",
+    "# registro": 8594,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q13 (channel 13 Real power)",
+    "# registro": 8596,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S13 (channel 13 apparent power)",
+    "# registro": 8598,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF13 (Channel 13 Power Factor)",
+    "# registro": 8600,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 13 (Channel Load Nature)",
+    "# registro": 8602,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L14 (channel 14 current)",
+    "# registro": 8604,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P14 (channel 14 real power)",
+    "# registro": 8606,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q14 (channel 14 Real power)",
+    "# registro": 8608,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S14 (channel 14 apparent power)",
+    "# registro": 8610,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF14 (Channel 14 Power Factor)",
+    "# registro": 8612,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 14 (Channel Load Nature)",
+    "# registro": 8614,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L15 (channel 15 current)",
+    "# registro": 8616,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P15 (channel 15 real power)",
+    "# registro": 8618,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q15 (channel 15 Real power)",
+    "# registro": 8620,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S15 (channel 15 apparent power)",
+    "# registro": 8622,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF15 (Channel 15 Power Factor)",
+    "# registro": 8624,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 15 (Channel Load Nature)",
+    "# registro": 8626,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L16 (channel 16 current)",
+    "# registro": 8628,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P16 (channel 16 real power)",
+    "# registro": 8630,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q16 (channel 16 Real power)",
+    "# registro": 8632,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S16 (channel 16 apparent power)",
+    "# registro": 8634,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF16 (Channel 16 Power Factor)",
+    "# registro": 8636,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 16 (Channel Load Nature)",
+    "# registro": 8638,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L17 (channel 17 current)",
+    "# registro": 8640,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P17 (channel 17 real power)",
+    "# registro": 8642,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q17 (channel 17 Real power)",
+    "# registro": 8644,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S17 (channel 17 apparent power)",
+    "# registro": 8646,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF17 (Channel 17 Power Factor)",
+    "# registro": 8648,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 17 (Channel Load Nature)",
+    "# registro": 8650,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "L18 (channel 18 current)",
+    "# registro": 8652,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "P18 (channel 18 real power)",
+    "# registro": 8654,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Q18 (channel 18 Real power)",
+    "# registro": 8656,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "S18 (channel 18 apparent power)",
+    "# registro": 8658,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PF18 (Channel 18 Power Factor)",
+    "# registro": 8660,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Load Nature 18 (Channel Load Nature)",
+    "# registro": 8662,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ps1(Channel 1  3-phase 4-line-single-phase 3-line total active power)",
+    "# registro": 8664,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qs1(Channel 1  3-phase 4-line-single-phase 4-line total reactive power)",
+    "# registro": 8666,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ss1(Channel 1  3-phase 4-line-single-phase 3-line total apparent power)",
+    "# registro": 8668,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PFs1(Channel 1  3-phase 4-line-single-phase 3-line total power factor)",
+    "# registro": 8670,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Nature of the load(Channel 1  3-phase 4-line-single-phase 3-line nature of the load)",
+    "# registro": 8672,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ps2(Channel 2  3-phase 4-line-single-phase 3-line total active power)",
+    "# registro": 8674,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qs2(Channel 2  3-phase 4-line-single-phase 4-line total reactive power)",
+    "# registro": 8676,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ss2(Channel 2  3-phase 4-line-single-phase 3-line total apparent power)",
+    "# registro": 8678,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PFs2(Channel 2  3-phase 4-line-single-phase 3-line total power factor)",
+    "# registro": 8680,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Nature of the load(Channel 2  3-phase 4-line-single-phase 3-line nature of the load)",
+    "# registro": 8682,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ps3(Channel 3  3-phase 4-line-single-phase 3-line total active power)",
+    "# registro": 8684,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qs3(Channel 3  3-phase 4-line-single-phase 4-line total reactive power)",
+    "# registro": 8686,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ss3(Channel 3  3-phase 4-line-single-phase 3-line total apparent power)",
+    "# registro": 8688,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PFs3(Channel 3  3-phase 4-line-single-phase 3-line total power factor)",
+    "# registro": 8690,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Nature of the load(Channel 3  3-phase 4-line-single-phase 3-line nature of the load)",
+    "# registro": 8692,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ps4(Channel 4  3-phase 4-line-single-phase 3-line total active power)",
+    "# registro": 8694,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qs4(Channel 4  3-phase 4-line-single-phase 4-line total reactive power)",
+    "# registro": 8696,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ss4(Channel 4  3-phase 4-line-single-phase 3-line total apparent power)",
+    "# registro": 8698,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PFs4(Channel 4  3-phase 4-line-single-phase 3-line total power factor)",
+    "# registro": 8700,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Nature of the load(Channel 4  3-phase 4-line-single-phase 3-line nature of the load)",
+    "# registro": 8702,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ps5(Channel 5  3-phase 4-line-single-phase 3-line total active power)",
+    "# registro": 8704,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qs5(Channel 5  3-phase 4-line-single-phase 4-line total reactive power)",
+    "# registro": 8706,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ss5(Channel 5  3-phase 4-line-single-phase 3-line total apparent power)",
+    "# registro": 8708,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PFs5(Channel 5  3-phase 4-line-single-phase 3-line total power factor)",
+    "# registro": 8710,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Nature of the load(Channel 5  3-phase 4-line-single-phase 3-line nature of the load)",
+    "# registro": 8712,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ps6(Channel 6  3-phase 4-line-single-phase 3-line total active power)",
+    "# registro": 8714,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Qs6(Channel 6  3-phase 4-line-single-phase 4-line total reactive power)",
+    "# registro": 8716,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Ss6(Channel 6  3-phase 4-line-single-phase 3-line total apparent power)",
+    "# registro": 8718,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "PFs6(Channel 6  3-phase 4-line-single-phase 3-line total power factor)",
+    "# registro": 8720,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Nature of the load(Channel 6  3-phase 4-line-single-phase 3-line nature of the load)",
+    "# registro": 8722,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Voltage Unbalance Factor",
+    "# registro": 12800,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U1 or U12 THD-U1",
+    "# registro": 12801,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U2 or U23 THD-U2",
+    "# registro": 12802,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U3 or U31 THD-U3",
+    "# registro": 12803,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Voltage THD average",
+    "# registro": 12804,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U1 or U12 3rd harmonic",
+    "# registro": 12806,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U1 or U12 5th harmonic",
+    "# registro": 12808,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U1 or U12 7th harmonic",
+    "# registro": 12810,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U1 or U12 8th harmonic",
+    "# registro": 12812,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U1 or U12 11th harmonic",
+    "# registro": 12814,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U1 or U12 13th harmonic",
+    "# registro": 12816,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U1 or U12 15th harmonic",
+    "# registro": 12818,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U2 or U23 3rd harmonic",
+    "# registro": 12836,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U2 or U23 5th harmonic",
+    "# registro": 12838,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U2 or U23 7th harmonic",
+    "# registro": 12840,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U2 or U23 9th harmonic",
+    "# registro": 12842,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U2 or U23 11th harmonic",
+    "# registro": 12844,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U2 or U23 13th harmonic",
+    "# registro": 12846,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U2 or U23 15th harmonic",
+    "# registro": 12848,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U3 or U31 3rd harmonic",
+    "# registro": 12866,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U3 or U31 5th harmonic",
+    "# registro": 12868,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U3 or U31 7th harmonic",
+    "# registro": 12870,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U3 or U31 9th harmonic",
+    "# registro": 12872,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U3 or U31 11th harmonic",
+    "# registro": 12874,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U3 or U31 13th harmonic",
+    "# registro": 12876,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U3 or U31 15th harmonic",
+    "# registro": 12878,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Current Unbalance Factor",
+    "# registro": 12895,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U1 crest factor",
+    "# registro": 12898,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U2 crest factor",
+    "# registro": 12902,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "U3 crest factor",
+    "# registro": 12906,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 1 Current K-Factor",
+    "# registro": 12962,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 2 Current K-Factor",
+    "# registro": 12965,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 3 Current K-Factor",
+    "# registro": 12968,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 4 Current K-Factor",
+    "# registro": 12971,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 5 Current K-Factor",
+    "# registro": 12974,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 6 Current K-Factor",
+    "# registro": 12977,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 7 Current K-Factor",
+    "# registro": 12980,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 8 Current K-Factor",
+    "# registro": 12983,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 9 Current K-Factor",
+    "# registro": 12986,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 10 Current K-Factor",
+    "# registro": 12989,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 11 Current K-Factor",
+    "# registro": 12992,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 12 Current K-Factor",
+    "# registro": 12995,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 13 Current K-Factor",
+    "# registro": 12998,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 14 Current K-Factor",
+    "# registro": 13001,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 15 Current K-Factor",
+    "# registro": 13004,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 16 Current K-Factor",
+    "# registro": 13007,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 17 Current K-Factor",
+    "# registro": 13010,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 18 Current K-Factor",
+    "# registro": 13013,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 1 Current THD I3",
+    "# registro": 13058,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 1 Current THD I5",
+    "# registro": 13060,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 1 Current THD I7",
+    "# registro": 13062,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 1 Current THD I9",
+    "# registro": 13064,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 1 Current THD I11",
+    "# registro": 13066,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 1 Current THD I13",
+    "# registro": 13068,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 1 Current THD I15",
+    "# registro": 13070,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 2 Current THD I3",
+    "# registro": 13089,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 2 Current THD I5",
+    "# registro": 13091,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 2 Current THD I7",
+    "# registro": 13093,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 2 Current THD I9",
+    "# registro": 13095,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 2 Current THD I11",
+    "# registro": 13097,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 2 Current THD I13",
+    "# registro": 13099,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 2 Current THD I15",
+    "# registro": 13101,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 3 Current THD I3",
+    "# registro": 13120,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 3 Current THD I5",
+    "# registro": 13122,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 3 Current THD I7",
+    "# registro": 13124,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 3 Current THD I9",
+    "# registro": 13126,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 3 Current THD I11",
+    "# registro": 13128,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 3 Current THD I13",
+    "# registro": 13130,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 3 Current THD I15",
+    "# registro": 13132,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 4 Current THD I3",
+    "# registro": 13151,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 4 Current THD I5",
+    "# registro": 13153,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 4 Current THD I7",
+    "# registro": 13155,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 4 Current THD I9",
+    "# registro": 13157,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 4 Current THD I11",
+    "# registro": 13159,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 4 Current THD I13",
+    "# registro": 13161,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 4 Current THD I15",
+    "# registro": 13163,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 5 Current THD I3",
+    "# registro": 13182,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 5 Current THD I5",
+    "# registro": 13184,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 5 Current THD I7",
+    "# registro": 13186,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 5 Current THD I9",
+    "# registro": 13188,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 5 Current THD I11",
+    "# registro": 13190,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 5 Current THD I13",
+    "# registro": 13192,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 5 Current THD I15",
+    "# registro": 13194,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 6  Current THD I3",
+    "# registro": 13213,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 6  Current THD I5",
+    "# registro": 13215,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 6  Current THD I7",
+    "# registro": 13217,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 6  Current THD I9",
+    "# registro": 13219,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 6  Current THD I11",
+    "# registro": 13221,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 6  Current THD I13",
+    "# registro": 13223,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 6  Current THD I15",
+    "# registro": 13225,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 7  Current THD I3",
+    "# registro": 13244,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 7  Current THD I5",
+    "# registro": 13246,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 7  Current THD I7",
+    "# registro": 13248,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 7  Current THD I9",
+    "# registro": 13250,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 7  Current THD I11",
+    "# registro": 13252,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 7  Current THD I13",
+    "# registro": 13254,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 7  Current THD I15",
+    "# registro": 13256,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 8  Current THD I3",
+    "# registro": 13275,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 8  Current THD I5",
+    "# registro": 13277,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 8  Current THD I7",
+    "# registro": 13279,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 8  Current THD I9",
+    "# registro": 13281,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 8  Current THD I11",
+    "# registro": 13283,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 8  Current THD I13",
+    "# registro": 13285,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 8  Current THD I15",
+    "# registro": 13287,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 9 Current THD I3",
+    "# registro": 13306,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 9 Current THD I5",
+    "# registro": 13308,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 9 Current THD I7",
+    "# registro": 13310,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 9 Current THD I9",
+    "# registro": 13312,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 9 Current THD I11",
+    "# registro": 13314,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 9 Current THD I13",
+    "# registro": 13316,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 9 Current THD I15",
+    "# registro": 13318,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 10   Current THD I3",
+    "# registro": 13337,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 10  Current THD I5",
+    "# registro": 13339,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 10  Current THD I7",
+    "# registro": 13341,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 10  Current THD I9",
+    "# registro": 13343,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 10  Current THD I11",
+    "# registro": 13345,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 10  Current THD I13",
+    "# registro": 13347,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 10  Current THD I15",
+    "# registro": 13349,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 11  Current THD I3",
+    "# registro": 13368,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 11 Current THD I5",
+    "# registro": 13370,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 11 Current THD I7",
+    "# registro": 13372,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 11 Current THD I9",
+    "# registro": 13374,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 11 Current THD I11",
+    "# registro": 13376,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 11 Current THD I13",
+    "# registro": 13378,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 11 Current THD I15",
+    "# registro": 13380,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 12  Current THD I3",
+    "# registro": 13399,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 12 Current THD I5",
+    "# registro": 13401,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 12 Current THD I7",
+    "# registro": 13403,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 12 Current THD I9",
+    "# registro": 13405,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 12 Current THD I11",
+    "# registro": 13407,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 12 Current THD I13",
+    "# registro": 13409,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 12 Current THD I15",
+    "# registro": 13411,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 13 Current THD I3",
+    "# registro": 13430,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 13 Current THD I5",
+    "# registro": 13432,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 13 Current THD I7",
+    "# registro": 13434,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 13 Current THD I9",
+    "# registro": 13436,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 13 Current THD I11",
+    "# registro": 13438,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 13 Current THD I13",
+    "# registro": 13440,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 13 Current THD I15",
+    "# registro": 13442,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 14  Current THD I3",
+    "# registro": 13460,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 14 Current THD I5",
+    "# registro": 13462,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 14 Current THD I7",
+    "# registro": 13464,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 14 Current THD I9",
+    "# registro": 13466,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 14 Current THD I11",
+    "# registro": 13468,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 14 Current THD I13",
+    "# registro": 13470,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 14 Current THD I15",
+    "# registro": 13472,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 15  Current THD I3",
+    "# registro": 13492,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 15 Current THD I5",
+    "# registro": 13494,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 15 Current THD I7",
+    "# registro": 13496,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 15 Current THD I9",
+    "# registro": 13498,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 15 Current THD I11",
+    "# registro": 13500,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 15 Current THD I13",
+    "# registro": 13502,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 15 Current THD I15",
+    "# registro": 13504,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 16  Current THD I3",
+    "# registro": 13522,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 16 Current THD I5",
+    "# registro": 13524,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 16 Current THD I7",
+    "# registro": 13526,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 16 Current THD I9",
+    "# registro": 13528,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 16 Current THD I11",
+    "# registro": 13530,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 16 Current THD I13",
+    "# registro": 13532,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 16 Current THD I15",
+    "# registro": 13534,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 17  Current THD I3",
+    "# registro": 13554,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 17 Current THD I5",
+    "# registro": 13556,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 17 Current THD I7",
+    "# registro": 13558,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 17 Current THD I9",
+    "# registro": 13560,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 17 Current THD I11",
+    "# registro": 13562,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 17 Current THD I13",
+    "# registro": 13564,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 17 Current THD I17",
+    "# registro": 13566,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 18  Current THD I3",
+    "# registro": 13585,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 18 Current THD I5",
+    "# registro": 13587,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 18 Current THD I7",
+    "# registro": 13589,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 18 Current THD I9",
+    "# registro": 13591,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 18 Current THD I11",
+    "# registro": 13593,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 18 Current THD I13",
+    "# registro": 13595,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 18 Current THD I15",
+    "# registro": 13597,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 1 3-phase 4-line-single -phase 3-line current unbalance",
+    "# registro": 13614,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 2 3-phase 4-line-single -phase 3-line current unbalance",
+    "# registro": 13615,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 3 3-phase 4-line-single -phase 3-line current unbalance",
+    "# registro": 13616,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 4 3-phase 4-line-single -phase 3-line current unbalance",
+    "# registro": 13617,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 5 3-phase 4-line-single -phase 3-line current unbalance",
+    "# registro": 13618,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Channel 6 3-phase 4-line- single -phase 3-line current unbalance",
+    "# registro": 13619,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  }
+]

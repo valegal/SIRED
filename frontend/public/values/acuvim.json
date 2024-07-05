@@ -1,0 +1,1016 @@
+[
+  {
+    "Nombre variable": "Frequency",
+    "# registro": 16384,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase voltage  V1",
+    "# registro": 16386,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase voltage  V2",
+    "# registro": 16388,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase voltage  V3",
+    "# registro": 16390,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Average voltage Vavg",
+    "# registro": 16392,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Line voltage V12",
+    "# registro": 16394,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Line voltage V23",
+    "# registro": 16396,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Line voltage V31",
+    "# registro": 16398,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Average line voltage Vlavg",
+    "# registro": 16400,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Current I1",
+    "# registro": 16402,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Current I2",
+    "# registro": 16404,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Current I3",
+    "# registro": 16406,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Average current Iavg",
+    "# registro": 16408,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Neutral current In",
+    "# registro": 16410,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase A power Pa",
+    "# registro": 16412,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase B power Pb",
+    "# registro": 16414,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase C power Pc",
+    "# registro": 16416,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "System power Psum",
+    "# registro": 16418,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase A reactive power Qa",
+    "# registro": 16420,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase B reactive power QB",
+    "# registro": 16422,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase C reactive power Qc",
+    "# registro": 16424,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "System reactive power Qsum",
+    "# registro": 16426,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase A apparent power Sa",
+    "# registro": 16428,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase B apparent power Sb",
+    "# registro": 16430,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase C apparent power Sc",
+    "# registro": 16432,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "System apparent  power Ssum",
+    "# registro": 16434,
+    "conversion": "a*0.001",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase A power factor Pfa",
+    "# registro": 16436,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase B power factor Pfb",
+    "# registro": 16438,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Phase C power factor PfC",
+    "# registro": 16440,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "System power factor Pfsum",
+    "# registro": 16442,
+    "conversion": "a*1",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Voltage unbalance factor U_unbl",
+    "# registro": 16444,
+    "conversion": "a*1000",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "Current unbalance factor I_unbl",
+    "# registro": 16446,
+    "conversion": "a*100",
+    "tipo": "float"
+  },
+  {
+    "Nombre variable": "THD V1 of V1(V12)",
+    "# registro": 16474,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "THD_V1 of V2(V31)",
+    "# registro": 16475,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "THD V1 of V3 V23",
+    "# registro": 16476,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Average THD_V",
+    "# registro": 16477,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "THD_I1",
+    "# registro": 16478,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "THD_I2",
+    "# registro": 16479,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "THD_I3",
+    "# registro": 16480,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Average THD_I",
+    "# registro": 16481,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V1 or V12 3rd harmonic",
+    "# registro": 16483,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V1 or V12 5th harmonic",
+    "# registro": 16485,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V1 or V12 7th harmonic",
+    "# registro": 16487,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V1 or V12 9th harmonic",
+    "# registro": 16489,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Crest Factor of V1(V12)",
+    "# registro": 16514,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "THFF of V1(V12)",
+    "# registro": 16515,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V2 or V31 3rd harmonic",
+    "# registro": 16517,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V2 or V31 5th harmonic",
+    "# registro": 16519,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V2 or V31 7th harmonic",
+    "# registro": 16521,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V2 or V31 9th harmonic",
+    "# registro": 16523,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Crest Factor of V2 V31",
+    "# registro": 16548,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "THFF of V2(V31)",
+    "# registro": 16549,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V3 or V23 3rd harmonic",
+    "# registro": 16551,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V3 or V23 5th harmonic",
+    "# registro": 16553,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V3 or V23 7th harmonic",
+    "# registro": 16555,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "V3 or V23 9th harmonic",
+    "# registro": 16557,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Crest Factor of V3(V23)",
+    "# registro": 16582,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "THFF of V3(V23)",
+    "# registro": 16583,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 2nd harmonic",
+    "# registro": 16584,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 3rd harmonic",
+    "# registro": 16585,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 4th harmonic",
+    "# registro": 16586,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 5th harmonic",
+    "# registro": 16587,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 6th harmonic",
+    "# registro": 16588,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 7th harmonic",
+    "# registro": 16589,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 8th harmonic",
+    "# registro": 16590,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 9th harmonic",
+    "# registro": 16591,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 10th harmonic",
+    "# registro": 16592,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 11th harmonic",
+    "# registro": 16593,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 12th harmonic",
+    "# registro": 16594,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 13th harmonic",
+    "# registro": 16595,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 14th harmonic",
+    "# registro": 16596,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 15th harmonic",
+    "# registro": 16597,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 16th harmonic",
+    "# registro": 16598,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 17th harmonic",
+    "# registro": 16599,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 18th harmonic",
+    "# registro": 16600,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 19th harmonic",
+    "# registro": 16601,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 20th harmonic",
+    "# registro": 16602,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 21st harmonic",
+    "# registro": 16603,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 22nd harmonic",
+    "# registro": 16604,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 23rd harmonic",
+    "# registro": 16605,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 24th harmonic",
+    "# registro": 16606,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 25th harmonic",
+    "# registro": 16607,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 26th harmonic",
+    "# registro": 16608,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 27th harmonic",
+    "# registro": 16609,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 28th harmonic",
+    "# registro": 16610,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 29th harmonic",
+    "# registro": 16611,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 30th harmonic",
+    "# registro": 16612,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I1 31st harmonic",
+    "# registro": 16613,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "K Factor of I1",
+    "# registro": 16616,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 2nd harmonic",
+    "# registro": 16617,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 3rd harmonic",
+    "# registro": 16618,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 4th harmonic",
+    "# registro": 16619,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 5th harmonic",
+    "# registro": 16620,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 6th harmonic",
+    "# registro": 16621,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 7th harmonic",
+    "# registro": 16622,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 8th harmonic",
+    "# registro": 16623,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 9th harmonic",
+    "# registro": 16624,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 10th harmonic",
+    "# registro": 16625,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 11th harmonic",
+    "# registro": 16626,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 12th harmonic",
+    "# registro": 16627,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 13th harmonic",
+    "# registro": 16628,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 14th harmonic",
+    "# registro": 16629,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 15th harmonic",
+    "# registro": 16630,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 16th harmonic",
+    "# registro": 16631,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 17th harmonic",
+    "# registro": 16632,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 18th harmonic",
+    "# registro": 16633,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 19th harmonic",
+    "# registro": 16634,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 20th harmonic",
+    "# registro": 16635,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 21st harmonic",
+    "# registro": 16636,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 22nd harmonic",
+    "# registro": 16637,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 23rd harmonic",
+    "# registro": 16638,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 24th harmonic",
+    "# registro": 16639,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 25th harmonic",
+    "# registro": 16640,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 26th harmonic",
+    "# registro": 16641,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 27th harmonic",
+    "# registro": 16642,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 28th harmonic",
+    "# registro": 16643,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 29th harmonic",
+    "# registro": 16644,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 30th harmonic",
+    "# registro": 16645,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I2 31st harmonic",
+    "# registro": 16646,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "K Factor of I2",
+    "# registro": 16649,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 2nd harmonic",
+    "# registro": 16650,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 3rd harmonic",
+    "# registro": 16651,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 4th harmonic",
+    "# registro": 16652,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 5th harmonic",
+    "# registro": 16653,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 6th harmonic",
+    "# registro": 16654,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 7th harmonic",
+    "# registro": 16655,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 8th harmonic",
+    "# registro": 16656,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 9th harmonic",
+    "# registro": 16657,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 10th harmonic",
+    "# registro": 16658,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 11th harmonic",
+    "# registro": 16659,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 12th harmonic",
+    "# registro": 16660,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 13th harmonic",
+    "# registro": 16661,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 14th harmonic",
+    "# registro": 16662,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 15th harmonic",
+    "# registro": 16663,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 16th harmonic",
+    "# registro": 16664,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 17th harmonic",
+    "# registro": 16665,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 18th harmonic",
+    "# registro": 16666,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 19th harmonic",
+    "# registro": 16667,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 20th harmonic",
+    "# registro": 16668,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 21st harmonic",
+    "# registro": 16669,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 22nd harmonic",
+    "# registro": 16670,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 23rd harmonic",
+    "# registro": 16671,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 24th harmonic",
+    "# registro": 16672,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 25th harmonic",
+    "# registro": 16673,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 26th harmonic",
+    "# registro": 16674,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 27th harmonic",
+    "# registro": 16675,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 28th harmonic",
+    "# registro": 16676,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 29th harmonic",
+    "# registro": 16677,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 30th harmonic",
+    "# registro": 16678,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "I3 31st harmonic",
+    "# registro": 16679,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "K Factor of I3",
+    "# registro": 16682,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "positive sequence real part of UA",
+    "# registro": 17044,
+    "conversion": "a*0.1",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "positive sequence complex part of UA",
+    "# registro": 17045,
+    "conversion": "a*0.1",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "negative sequence real part of UA",
+    "# registro": 17046,
+    "conversion": "a*0.1",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "negative sequence complex part of UA",
+    "# registro": 17047,
+    "conversion": "a*0.1",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "zero sequence real part of UA",
+    "# registro": 17048,
+    "conversion": "a*0.1",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "zero sequence complex part of UA",
+    "# registro": 17049,
+    "conversion": "a*0.1",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "positive sequence real part of IA",
+    "# registro": 17050,
+    "conversion": "a*0.050",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "positive sequence complex part of IA",
+    "# registro": 17051,
+    "conversion": "a*0.050",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "negative sequence real part of IA",
+    "# registro": 17052,
+    "conversion": "a*0.050",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "negative sequence complex part of IA",
+    "# registro": 17053,
+    "conversion": "a*0.050",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "zero sequence real part of IA",
+    "# registro": 17054,
+    "conversion": "a*0.050",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "zero sequence complex part of IA",
+    "# registro": 17055,
+    "conversion": "a*0.050",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "phase angle of V2 to V1 V1",
+    "# registro": 17056,
+    "conversion": "360-(a*0.1)",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "phase angle of V3 to V1 V1",
+    "# registro": 17057,
+    "conversion": "360-(a*0.1)",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "phase angle of I1 to V1 V1",
+    "# registro": 17058,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "phase angle of I2 to V1 V1",
+    "# registro": 17059,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "phase angle of I3 to V1 V1",
+    "# registro": 17060,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "load characterisics",
+    "# registro": 16448,
+    "conversion": "a*1",
+    "tipo": "float"
+  }
+]

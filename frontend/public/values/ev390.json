@@ -1,0 +1,116 @@
+[
+  {
+    "Nombre variable": "Phase Voltage U1",
+    "# registro": 272,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Phase Voltage U2",
+    "# registro": 273,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Phase Voltage U3",
+    "# registro": 274,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Line voltage U12",
+    "# registro": 275,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Line voltage U23",
+    "# registro": 276,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Line voltage U31",
+    "# registro": 277,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Current I1",
+    "# registro": 278,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Current I2",
+    "# registro": 279,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Current I3",
+    "# registro": 280,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Average phase voltage Uavg",
+    "# registro": 281,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Average line voltage Ulavg",
+    "# registro": 282,
+    "conversion": "a*0.1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Average current Iavg",
+    "# registro": 283,
+    "conversion": "a*0.001",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Power P",
+    "# registro": 284,
+    "conversion": "a*1",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "Reactive Power Q",
+    "# registro": 285,
+    "conversion": "a*1",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "Apparent Power S",
+    "# registro": 286,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Frequency F",
+    "# registro": 287,
+    "conversion": "a*0.01",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Power factor PF",
+    "# registro": 288,
+    "conversion": "a*0.0001",
+    "tipo": "int"
+  },
+  {
+    "Nombre variable": "Load nature RT",
+    "# registro": 289,
+    "conversion": "a*1",
+    "tipo": "word"
+  },
+  {
+    "Nombre variable": "Neutral current In",
+    "# registro": 292,
+    "conversion": "a*1",
+    "tipo": "word"
+  }
+]
