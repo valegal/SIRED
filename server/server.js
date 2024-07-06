@@ -258,8 +258,6 @@ app.get('/medicionesconteo', (req, res) => {
     );
 });
 
-
-
 app.get('/mediciones', (req, res) => {
     const page = req.query.page || 1;
     const limit = parseInt(req.query.limit) || 10; // Parsea el valor a un entero
@@ -306,6 +304,36 @@ app.get('/variables/:idmedicion', (req, res) => {
             res.status(200).send(data);
         }
     );
+});
+
+// Ruta para filtro avanzado
+app.get('/medicionesfiltroavanzado', (req, res) => {
+    const { fecha, hora, equipo, cantidad } = req.query;
+
+    let filteredMediciones = [...mediciones];
+
+    if (fecha) {
+        filteredMediciones = filteredMediciones.filter(medicion =>
+            medicion.fecha.toLowerCase().includes(fecha.toLowerCase())
+        );
+    }
+
+    if (hora) {
+        filteredMediciones = filteredMediciones.filter(medicion =>
+            medicion.hora.toLowerCase().includes(hora.toLowerCase())
+        );
+    }
+
+    if (equipo) {
+        filteredMediciones = filteredMediciones.filter(medicion =>
+            medicion.equipos_idequipo.toLowerCase().includes(equipo.toLowerCase())
+        );
+    }
+
+    const cantidadNumerica = parseInt(cantidad);
+    const paginatedMediciones = filteredMediciones.slice(0, cantidadNumerica);
+
+    res.json(paginatedMediciones);
 });
 
 
@@ -368,6 +396,19 @@ app.get('/has', (req, res) => {
         }
     );
 });
+
+
+// --------------------- Otras ---------------------------
+
+
+
+
+
+
+
+
+
+// --------------------- Port ---------------------------
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

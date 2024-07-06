@@ -33,11 +33,13 @@ function MedicionesAdmin() {
                 <NavUser></NavUser>
             </div>
             <RutaActual></RutaActual>
+            
             <TablaMediciones></TablaMediciones>
+            
 
             <div className="flex justify-center mt-4 px-2 pb-4">
                 <button
-                    className="bg-lime-300 border border-lime-600 hover:shadow-lg text-lime-900 italic text-lg font-bold py-3 px-8 rounded-full"
+                    className="bg-lime-300 bg-opacity-80 border border-lime-600 hover:shadow-lg text-lime-900 italic text-lg font-bold py-3 px-8 mb-10 rounded-full"
                     onClick={handleDownloadClick}
                 >
                     Descargar datos
@@ -87,6 +89,7 @@ function MedicionesAdmin() {
                     </div>
                 </div>
             )}
+           
         </div>
     );
 }
