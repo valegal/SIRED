@@ -247,7 +247,6 @@ app.get('/medicionestodas', (req, res) => {
 
 // Ruta para filtro avanzado
 app.get('/medicionesfiltroavanzado', (req, res) => {
-    console.log('Solicitud recibida en /medicionesfiltroavanzado');
     const { fecha, hora, equipo } = req.query;
 
     // Construir la consulta SQL dinámicamente según los parámetros recibidos

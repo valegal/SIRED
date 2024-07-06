@@ -122,7 +122,7 @@ const TablaMediciones = () => {
                 <div className='flex font-mono italic text-lime-500 items-start mr-96 pr-24'>Tabla de mediciones</div>
                 <input
                     type="text"
-                    placeholder="Filtrar por equipo..."
+                    placeholder="Filtrar por ID..."
                     value={filtro}
                     onChange={handleFiltroChange}
                     className="px-2 py-1 rounded-lg border border-lime-700"
@@ -137,7 +137,7 @@ const TablaMediciones = () => {
                     Filtro avanzado
                 </button>
                 <button
-                    className="ml-2 px-2 py-1 bg-lime-200 text-md text-lime-800 hover:bg-lime-300 rounded-lg flex items-center"
+                    className="ml-2 px-2 py-1 text-md text-lime-800 hover:bg-lime-200 rounded-lg flex items-center"
                     onClick={handleInfoClick} // Manejador para mostrar el popup
                 >
                     <span className="mr-2 text-lime-700">
