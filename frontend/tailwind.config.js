@@ -12,6 +12,7 @@ module.exports = {
         moradoclaro: '#7B7DEB',
         moradofuerte: '#4464B5',
       },
+
     },
   },
   variants: {

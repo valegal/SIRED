@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import TablaVariables from './TablaVariables';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import FiltroAvanzado from '../FiltroAvanzado';
 
 const TablaMediciones = () => {
     const [mediciones, setMediciones] = useState([]);
     const [conteo, setConteo] = useState({ total: 0 });
     const [paginaActual, setPaginaActual] = useState(1);
     const [medicionesPorPagina] = useState(24);
+    // eslint-disable-next-line no-unused-vars
     const [filtro, setFiltro] = useState('');
     const [variablesMedicion, setVariablesMedicion] = useState('');
     const [medicionSeleccionada, setMedicionSeleccionada] = useState(null);
@@ -15,9 +17,10 @@ const TablaMediciones = () => {
     const [showPopup, setShowPopup] = useState(false);
     const [showPopup2, setShowPopup2] = useState(false);
     const [hovered, setHovered] = useState(false); 
-    const [fechaFiltro, setFechaFiltro] = useState('');
-    const [equipoFiltro, setEquipoFiltro] = useState('');
-
+    // eslint-disable-next-line no-unused-vars
+    const [loading, setLoading] = useState(false); // Estado de carga
+    const [largeSearchWarning, setLargeSearchWarning] = useState(false); // Advertencia para búsquedas largas
+    
 
     useEffect(() => {
         const obtenerMediciones = async () => {
@@ -66,9 +69,9 @@ const TablaMediciones = () => {
         }
     };
 
-    const handleFiltroChange = (e) => {
-        setFiltro(e.target.value);
-    };
+    // const handleFiltroChange = (e) => {
+    //     setFiltro(e.target.value);
+    // };
 
     const handleFiltroClick = () => {
         setShowPopup2(true); // Mostrar popup al hacer clic en "Filtro avanzado"
@@ -79,32 +82,7 @@ const TablaMediciones = () => {
         setShowPopup(true); // Mostrar popup al hacer clic en "Información"
     };
 
-    const handleFiltrarAvanzado = async () => {
-        let fecha = '';
-        if (fechaFiltro) {
-            const fechaPartes = fechaFiltro.split('-');
-            fecha = `${fechaPartes[0]}`;
-            if (fechaPartes.length > 1) {
-                fecha += `-${fechaPartes[1]}`;
-                if (fechaPartes.length > 2) {
-                    fecha += `-${fechaPartes[2]}`;
-                }
-            }
-        }
 
-        try {
-            const response = await axios.get(`http://localhost:8081/medicionesfiltroavanzado`, {
-                params: {
-                    fecha: fecha,
-                    equipo: equipoFiltro,
-                },
-            });
-            setMediciones(response.data);
-            setShowPopup2(false); 
-        } catch (error) {
-            console.error('Error al filtrar mediciones avanzado:', error);
-        }
-    };
 
     
 
@@ -116,17 +94,18 @@ const TablaMediciones = () => {
     };
 
     return (
-        <div className='flex flex-col items-center pb-12 pt-2'>
+        <div className='flex flex-col items-center pb-6 pt-2'>
             {/* Filtro y botón de búsqueda */}
             <div className="flex flex-row items-start justify-between">
-                <div className='flex font-mono italic text-lime-500 items-start mr-96 pr-24'>Tabla de mediciones</div>
-                <input
+                <div className='flex font-mono italic text-lime-600 items-start mr-72 pr-24'>Tabla de mediciones</div>
+                <div className='mx-40'></div>
+                {/* <input
                     type="text"
                     placeholder="Filtrar por ID..."
                     value={filtro}
                     onChange={handleFiltroChange}
                     className="px-2 py-1 rounded-lg border border-lime-700"
-                />
+                /> */}
                 <button
                     className="ml-2 px-2 py-1 bg-lime-200 text-md text-lime-800 hover:bg-lime-300 rounded-lg flex items-center"
                     onClick={handleFiltroClick}
@@ -147,72 +126,40 @@ const TablaMediciones = () => {
                 </button>
             </div>
 
+            {loading && <p>Cargando...</p>} {/* Indicador de carga */}
+            {largeSearchWarning && <p className='flex justify-center italic font-semibold text-gray-500 bg-white px-2 text-sm mt-2 rounded-lg'>La búsqueda ha devuelto muchos resultados. Considera refinar los criterios de filtro.</p>} {/* Advertencia para búsquedas largas */}
+
             {/* Popup de Información */}
             {showPopup && (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-700 bg-opacity-50 z-50">
+        <button
+                            className="absolute top-0 right-2 mt-2 ml-2 text-white hover:text-gray-700"
+                            onClick={() => setShowPopup(false)}
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+        
         <div className="bg-white p-4 mt-2 rounded-lg shadow-lg">
+            
             <h1 className="text-lg font-bold text-green-900">Información adicional</h1>
             <div className='divide-y py-2'>
             <p className="text-md italic font-semibold  mt-4">Filas totales existentes en la tabla de mediciones: {conteo.total}</p>
             <p className="text-md italic font-semibold  mt-2 text-wrap"> Al precionar la opción <strong>Ver más</strong> se deplegarán las variables de la medición seleccionada.</p>
             </div>
-            <div className="flex justify-center mt-4">
-                <button
-                    className="mt-2 px-4 py-2 bg-lime-200 text-lime-800 hover:bg-lime-300 rounded-lg"
-                    onClick={() => setShowPopup(false)} // Ocultar popup al hacer clic en el botón de cierre
-                >
-                    Cerrar
-                </button>
-            </div>
+            
         </div>
     </div>
 )}
 
-   {/* Popup de Filtro avanzado */}
-   {showPopup2 && (
-                <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-700 bg-opacity-50 z-50">
-                    <div className="bg-white p-4 mt-2 rounded-lg shadow-lg">
-                        <h1 className="text-lg font-bold text-green-900">Filtro avanzado</h1>
-                        <div className='divide-y py-2'>
-                            <p className="text-md italic font-semibold mt-4">Selecciona la fecha:</p>
-                            <input
-                                type="date"
-                                value={fechaFiltro}
-                                onChange={(e) => setFechaFiltro(e.target.value)}
-                                className="px-2 py-1 mt-2 rounded-lg border border-lime-700"
-                            />
-                            <p className="text-md italic font-semibold mt-2 text-wrap">Selecciona el equipo:</p>
-                            <select
-                                value={equipoFiltro}
-                                onChange={(e) => setEquipoFiltro(e.target.value)}
-                                className="px-2 py-1 mt-2 rounded-lg border border-lime-700"
-                            >
-                                <option value="">Selecciona un equipo</option>
-                                <option value="5PAV6">5PAV6</option>
-                                <option value="SAV1">SAV1</option>
-                                <option value="5PAR4">5PAR4</option>
-                                <option value="5PAR5">5PAR5</option>
-                                <option value="SAR2">SAR2</option>
-                                <option value="SAR3">SAR3</option>
-                                <option value="4PEV7">4PEV7</option>
-                            </select>
-                        </div>
-                        <div className="flex justify-center mt-4">
-                            <button
-                                className="mt-2 px-4 py-2 bg-lime-200 text-lime-800 hover:bg-lime-300 rounded-lg"
-                                onClick={handleFiltrarAvanzado}
-                            >
-                                Filtrar
-                            </button>
-                            <button
-                                className="ml-2 mt-2 px-4 py-2 bg-red-200 text-red-800 hover:bg-red-300 rounded-lg"
-                                onClick={() => setShowPopup2(false)}
-                            >
-                                Cerrar
-                            </button>
-                        </div>
-                    </div>
-                </div>
+ {/* Popup para el filtro avanzado */}
+ {showPopup2 && (
+                <FiltroAvanzado
+                    setShowPopup2={setShowPopup2}
+                    setMediciones={setMediciones}
+                    setLargeSearchWarning={setLargeSearchWarning}
+                />
             )}
 
 
@@ -246,6 +193,20 @@ const TablaMediciones = () => {
                         ))}
                     </tbody>
                 </table>
+
+                {/* Mensaje de advertencia para búsquedas grandes */}
+            {largeSearchWarning && (
+                <div className="mt-4 p-4 bg-yellow-100 text-yellow-900">
+                    La búsqueda ha devuelto más de 1000 resultados. Considera refinar tu búsqueda o descargar los datos.
+                </div>
+            )}
+
+            {/* Loader */}
+            {loading && (
+                <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+                    <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-24 w-24"></div>
+                </div>
+            )}
                 <div className="flex justify-between mt-4 px-2 pb-4">
                     <button
                         className="bg-lime-200 hover:shadow-lg text-lime-900 italic font-bold py-2 px-4 rounded-full"

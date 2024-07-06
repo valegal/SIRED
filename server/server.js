@@ -245,38 +245,48 @@ app.get('/medicionestodas', (req, res) => {
     );
 });
 
-// Ruta para filtro avanzado
-app.get('/medicionesfiltroavanzado', (req, res) => {
-    const { fecha, hora, equipo } = req.query;
 
-    // Construir la consulta SQL dinámicamente según los parámetros recibidos
-    let sql = 'SELECT * FROM mediciones WHERE 1';
-    const params = [];
+//Endpoint mediciones filtro avanzado
+app.get('/medicionesfiltroavanzado', async (req, res) => {
+    const { year, month, day, equipo } = req.query;
 
-    if (fecha) {
-        sql += ' AND fecha = ?';
-        params.push(fecha);
+    // Construir la consulta de filtro según los parámetros recibidos
+    let query = 'SELECT idmedicion, SUBSTRING_INDEX(fecha, " ", 1) AS fecha, SUBSTRING_INDEX(fecha, " ", -1) AS hora, tiempoLectura, equipos_idequipo FROM mediciones WHERE 1=1';
+
+    if (year) {
+        // Filtrar por año
+        query += ` AND LEFT(fecha, 4) = '${year}'`;
     }
-    if (hora) {
-        sql += ' AND hora = ?';  // Verifica que 'hora' sea el nombre correcto de la columna
-        params.push(hora);
+    if (month) {
+        // Filtrar por mes
+        query += ` AND MID(fecha, 6, 2) = '${month}'`;
+    }
+    if (day) {
+        // Filtrar por día
+        query += ` AND MID(fecha, 9, 2) = '${day}'`;
     }
     if (equipo) {
-        sql += ' AND equipos_idequipo IN (?)';
-        params.push(Array.isArray(equipo) ? equipo : [equipo]);
+        // Filtrar por equipos específicos
+        const equiposArray = equipo.split(',');
+        query += ` AND equipos_idequipo IN ('${equiposArray.join("','")}')`;
     }
 
-    // Ejecutar la consulta SQL con los parámetros
-    db.query(sql, params, (err, result) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).send('Error al obtener los datos de las mediciones');
-        }
-
-        // Aquí puedes aplicar paginación u otras operaciones según sea necesario
-        res.json(result);
-    });
+    try {
+        // Ejecutar la consulta en la base de datos utilizando db
+        db.query(query, (err, results) => {
+            if (err) {
+                console.error('Error al filtrar mediciones:', err);
+                return res.status(500).json({ error: 'Error al filtrar mediciones' });
+            }
+            res.json(results);
+        });
+    } catch (error) {
+        console.error('Error al filtrar mediciones:', error);
+        res.status(500).json({ error: 'Error al filtrar mediciones' });
+    }
 });
+
+
 
 
 
@@ -297,10 +307,11 @@ app.get('/medicionesconteo', (req, res) => {
 
 app.get('/mediciones', (req, res) => {
     const page = req.query.page || 1;
-    const limit = parseInt(req.query.limit) || 10; // Parsea el valor a un entero
+    const limit = parseInt(req.query.limit) || 10;
     const offset = (page - 1) * limit;
+    
     db.query(
-        'SELECT idmedicion, SUBSTRING_INDEX(fecha, " ", 1) AS fecha, SUBSTRING_INDEX(fecha, " ", -1) AS hora, tiempoLectura, equipos_idequipo FROM mediciones LIMIT ? OFFSET ?',
+        'SELECT idmedicion, SUBSTRING_INDEX(fecha, " ", 1) AS fecha, SUBSTRING_INDEX(fecha, " ", -1) AS hora, tiempoLectura, equipos_idequipo FROM mediciones ORDER BY fecha DESC LIMIT ? OFFSET ?',
         [limit, offset],
         (err, result) => {
             if (err) {
@@ -311,6 +322,7 @@ app.get('/mediciones', (req, res) => {
         }
     );
 });
+
 
 // Endpoint para obtener las variables de una medición específica
 app.get('/variables/:idmedicion', (req, res) => {

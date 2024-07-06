@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Icon } from '@iconify/react/dist/iconify.js';
 
 const Tablaindicadores = () => {
     const [indicadores, setindicadores] = useState([]);
@@ -13,6 +12,7 @@ const Tablaindicadores = () => {
     // eslint-disable-next-line no-unused-vars
     const [tablaWeight, setTablaWeight] = useState(1200);
     const [searchText, setSearchText] = useState('');
+    const [hovered, setHovered] = useState(false); 
     const columnas = ["idindicador","nombre","posiciones" ,"formula", "Grupo"];
 
 
@@ -56,22 +56,21 @@ const Tablaindicadores = () => {
             {/* Filtro y botón de búsqueda */}
             <div className="flex flex-row items-center justify-beetwen">
                 <div className='flex font-mono italic text-lime-500 items-start mr-96 pr-24'>Tabla de indicadores</div>
+                <div className='px-32'></div>
                 <input
                     type="text"
-                    placeholder="Filtrar..."
+                    placeholder="Buscar..."
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
                     className="px-2 py-1 rounded-lg border border-lime-700"
                 />
-                <button
+                <div
                     // onClick={handleBuscarClick}
-                    className="ml-2 px-2 py-1 bg-lime-200 text-md text-lime-800 hover:bg-lime-300 rounded-lg flex items-center"
+                    className="ml-2 px-1 py-1 bg-lime-100 text-md text-lime-800 rounded-lg flex items-center"
                 >
-                    <span className="mr-2 text-lime-700">
-                    <Icon icon="octicon:filter-16" width="16" height="16"  />
-                    </span>
-                    Buscar
-                </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="currentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"></path></svg>
+                
+                </div>
             </div>
 
             {/* Tabla de indicadores */}
@@ -121,7 +120,16 @@ const Tablaindicadores = () => {
                     </button>
                 </div> */}
             </div>
-            <h1 className="text-lg font-semibold italic text-green-700 mt-2">Filas totales en la tabla de indicadores: {conteo.total}</h1>
+            <div
+                className={`fixed bottom-5 left-4 p-4 bg-slate-200 bg-opacity-20 shadow-md rounded-lg ${hovered ? 'scale-105' : ''}`}
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                style={{ transition: 'transform 0.3s ease-in-out' }}
+            >
+               <h1 className="text-sm font-semibold italic text-lime-700/70">Filas totales en la tabla de indicadores: {conteo.total}</h1>
+               
+            </div>
+            
         </div>
     );
 };

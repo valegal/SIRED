@@ -1,53 +1,12 @@
-import { useState } from 'react';
-import NavUser from "../../components/NavUser";
-import TablaIndicadores from "../../components/datos/TablaIndicadores";
-import RutaActual from "../extras/RutaActual";
+import PropTypes from 'prop-types';
 
-function IndicadoresAdmin() {
-    const [showPopup, setShowPopup] = useState(false);
-    const [formato, setFormato] = useState('JSON');
-    const [fecha, setFecha] = useState('');
-
-    const handleDownloadClick = () => {
-        setShowPopup(true);
-    };
-
-    const handleFormatoChange = (event) => {
-        setFormato(event.target.value);
-    };
-
-    const handleFechaChange = (event) => {
-        setFecha(event.target.value);
-    };
-
-    const handleDownload = () => {
-        // Aquí puedes implementar la lógica para descargar los datos
-        console.log('Descargando datos en formato', formato, 'para la fecha', fecha);
-        // Cerrar la ventana emergente después de descargar los datos
-        setShowPopup(false);
-    };
-
+function DescargaIndicadores({ showPopup, setShowPopup, formato, fecha, handleFormatoChange, handleFechaChange, handleDownload }) {
     return (
-        <div className="bg-lime-200/20 pt-16">
-            <div>
-                <NavUser></NavUser>
-            </div>
-            <RutaActual></RutaActual>
-            <TablaIndicadores></TablaIndicadores>
-
-            <div className="flex justify-center mt-4 px-2 pb-4">
-                <button
-                    className="bg-lime-300 border border-lime-600 hover:shadow-lg text-lime-900 italic text-lg font-bold py-3 px-8 rounded-full mb-6"
-                    onClick={handleDownloadClick}
-                >
-                    Descargar datos
-                </button>
-            </div>
-
+        <>
             {showPopup && (
                 <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-50">
                     <div className="bg-white p-6 rounded shadow-lg">
-                        <h2 className="text-lg font-bold mb-4">Descargar tabla de indicadores</h2>
+                        <h2 className="text-lg font-bold mb-4">Descargar datos</h2>
                         <div className="mb-4">
                             <label htmlFor="formato">Formato:</label>
                             <select
@@ -87,8 +46,18 @@ function IndicadoresAdmin() {
                     </div>
                 </div>
             )}
-        </div>
+        </>
     );
 }
 
-export default IndicadoresAdmin;
+DescargaIndicadores.propTypes = {
+    showPopup: PropTypes.bool.isRequired,
+    setShowPopup: PropTypes.func.isRequired,
+    formato: PropTypes.string.isRequired,
+    fecha: PropTypes.string.isRequired,
+    handleFormatoChange: PropTypes.func.isRequired,
+    handleFechaChange: PropTypes.func.isRequired,
+    handleDownload: PropTypes.func.isRequired,
+};
+
+export default DescargaIndicadores;
