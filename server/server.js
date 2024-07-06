@@ -245,6 +245,44 @@ app.get('/medicionestodas', (req, res) => {
     );
 });
 
+// Ruta para filtro avanzado
+app.get('/medicionesfiltroavanzado', (req, res) => {
+    console.log('Solicitud recibida en /medicionesfiltroavanzado');
+    const { fecha, hora, equipo } = req.query;
+
+    // Construir la consulta SQL dinámicamente según los parámetros recibidos
+    let sql = 'SELECT * FROM mediciones WHERE 1';
+    const params = [];
+
+    if (fecha) {
+        sql += ' AND fecha = ?';
+        params.push(fecha);
+    }
+    if (hora) {
+        sql += ' AND hora = ?';  // Verifica que 'hora' sea el nombre correcto de la columna
+        params.push(hora);
+    }
+    if (equipo) {
+        sql += ' AND equipos_idequipo IN (?)';
+        params.push(Array.isArray(equipo) ? equipo : [equipo]);
+    }
+
+    // Ejecutar la consulta SQL con los parámetros
+    db.query(sql, params, (err, result) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).send('Error al obtener los datos de las mediciones');
+        }
+
+        // Aquí puedes aplicar paginación u otras operaciones según sea necesario
+        res.json(result);
+    });
+});
+
+
+
+
+
 app.get('/medicionesconteo', (req, res) => {
     db.query(
         'SELECT COUNT(*) as total FROM mediciones',
@@ -306,35 +344,6 @@ app.get('/variables/:idmedicion', (req, res) => {
     );
 });
 
-// Ruta para filtro avanzado
-app.get('/medicionesfiltroavanzado', (req, res) => {
-    const { fecha, hora, equipo, cantidad } = req.query;
-
-    let filteredMediciones = [...mediciones];
-
-    if (fecha) {
-        filteredMediciones = filteredMediciones.filter(medicion =>
-            medicion.fecha.toLowerCase().includes(fecha.toLowerCase())
-        );
-    }
-
-    if (hora) {
-        filteredMediciones = filteredMediciones.filter(medicion =>
-            medicion.hora.toLowerCase().includes(hora.toLowerCase())
-        );
-    }
-
-    if (equipo) {
-        filteredMediciones = filteredMediciones.filter(medicion =>
-            medicion.equipos_idequipo.toLowerCase().includes(equipo.toLowerCase())
-        );
-    }
-
-    const cantidadNumerica = parseInt(cantidad);
-    const paginatedMediciones = filteredMediciones.slice(0, cantidadNumerica);
-
-    res.json(paginatedMediciones);
-});
 
 
 // --------------------- Tablas indicadores ---------------------------

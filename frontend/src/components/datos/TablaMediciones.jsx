@@ -13,7 +13,10 @@ const TablaMediciones = () => {
     const [medicionSeleccionada, setMedicionSeleccionada] = useState(null);
     const [equipoSeleccionado, setEquipoSeleccionado] = useState(null);
     const [showPopup, setShowPopup] = useState(false);
+    const [showPopup2, setShowPopup2] = useState(false);
     const [hovered, setHovered] = useState(false); 
+    const [fechaFiltro, setFechaFiltro] = useState('');
+    const [equipoFiltro, setEquipoFiltro] = useState('');
 
 
     useEffect(() => {
@@ -67,9 +70,43 @@ const TablaMediciones = () => {
         setFiltro(e.target.value);
     };
 
+    const handleFiltroClick = () => {
+        setShowPopup2(true); // Mostrar popup al hacer clic en "Filtro avanzado"
+        //Acá debe ir la lógica para filtrar
+    };
+
     const handleInfoClick = () => {
         setShowPopup(true); // Mostrar popup al hacer clic en "Información"
     };
+
+    const handleFiltrarAvanzado = async () => {
+        let fecha = '';
+        if (fechaFiltro) {
+            const fechaPartes = fechaFiltro.split('-');
+            fecha = `${fechaPartes[0]}`;
+            if (fechaPartes.length > 1) {
+                fecha += `-${fechaPartes[1]}`;
+                if (fechaPartes.length > 2) {
+                    fecha += `-${fechaPartes[2]}`;
+                }
+            }
+        }
+
+        try {
+            const response = await axios.get(`http://localhost:8081/medicionesfiltroavanzado`, {
+                params: {
+                    fecha: fecha,
+                    equipo: equipoFiltro,
+                },
+            });
+            setMediciones(response.data);
+            setShowPopup2(false); 
+        } catch (error) {
+            console.error('Error al filtrar mediciones avanzado:', error);
+        }
+    };
+
+    
 
     const handleScrollToBottom = () => {
         window.scrollTo({
@@ -92,6 +129,7 @@ const TablaMediciones = () => {
                 />
                 <button
                     className="ml-2 px-2 py-1 bg-lime-200 text-md text-lime-800 hover:bg-lime-300 rounded-lg flex items-center"
+                    onClick={handleFiltroClick}
                 >
                     <span className="mr-2 text-lime-700">
                         <Icon icon="octicon:filter-16" width="16" height="16" />
@@ -129,6 +167,53 @@ const TablaMediciones = () => {
         </div>
     </div>
 )}
+
+   {/* Popup de Filtro avanzado */}
+   {showPopup2 && (
+                <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-700 bg-opacity-50 z-50">
+                    <div className="bg-white p-4 mt-2 rounded-lg shadow-lg">
+                        <h1 className="text-lg font-bold text-green-900">Filtro avanzado</h1>
+                        <div className='divide-y py-2'>
+                            <p className="text-md italic font-semibold mt-4">Selecciona la fecha:</p>
+                            <input
+                                type="date"
+                                value={fechaFiltro}
+                                onChange={(e) => setFechaFiltro(e.target.value)}
+                                className="px-2 py-1 mt-2 rounded-lg border border-lime-700"
+                            />
+                            <p className="text-md italic font-semibold mt-2 text-wrap">Selecciona el equipo:</p>
+                            <select
+                                value={equipoFiltro}
+                                onChange={(e) => setEquipoFiltro(e.target.value)}
+                                className="px-2 py-1 mt-2 rounded-lg border border-lime-700"
+                            >
+                                <option value="">Selecciona un equipo</option>
+                                <option value="5PAV6">5PAV6</option>
+                                <option value="SAV1">SAV1</option>
+                                <option value="5PAR4">5PAR4</option>
+                                <option value="5PAR5">5PAR5</option>
+                                <option value="SAR2">SAR2</option>
+                                <option value="SAR3">SAR3</option>
+                                <option value="4PEV7">4PEV7</option>
+                            </select>
+                        </div>
+                        <div className="flex justify-center mt-4">
+                            <button
+                                className="mt-2 px-4 py-2 bg-lime-200 text-lime-800 hover:bg-lime-300 rounded-lg"
+                                onClick={handleFiltrarAvanzado}
+                            >
+                                Filtrar
+                            </button>
+                            <button
+                                className="ml-2 mt-2 px-4 py-2 bg-red-200 text-red-800 hover:bg-red-300 rounded-lg"
+                                onClick={() => setShowPopup2(false)}
+                            >
+                                Cerrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
 
 
 
