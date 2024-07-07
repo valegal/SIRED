@@ -27,16 +27,16 @@ function App() {
 
           <Route path="/datos" element={<ProtectedRoute roles={['pregrado','posgrado','administrador']}><Home /></ProtectedRoute>} />  
           <Route path="/datos/pregrado" element={<ProtectedRoute roles={['pregrado']}><DatosPregrado /></ProtectedRoute>} />
-          <Route path="/datos/pregrado/mediciones" element={<ProtectedRoute roles={['administrador']}><MedicionesPre /></ProtectedRoute>} />
-          <Route path="/datos/pregrado/indicadores" element={<ProtectedRoute roles={['administrador']}><DatosAdmin /></ProtectedRoute>} />
-          <Route path="/datos/pregrado/equipos" element={<ProtectedRoute roles={['administrador']}><DatosAdmin /></ProtectedRoute>} />
-          <Route path="/datos/pregrado/grupos" element={<ProtectedRoute roles={['administrador']}><DatosAdmin /></ProtectedRoute>} />
+          <Route path="/datos/pregrado/mediciones" element={<ProtectedRoute roles={['pregrado']}><MedicionesPre /></ProtectedRoute>} />
+          <Route path="/datos/pregrado/indicadores" element={<ProtectedRoute roles={['pregrado']}><IndicadoresAdmin /></ProtectedRoute>} />
+          <Route path="/datos/pregrado/equipos" element={<ProtectedRoute roles={['pregrado']}><EquiposAdmin /></ProtectedRoute>} />
+          <Route path="/datos/pregrado/grupos" element={<ProtectedRoute roles={['pregrado']}><GruposAdmin /></ProtectedRoute>} />
 
           <Route path="/datos/posgrado" element={<ProtectedRoute roles={['posgrado']}><DatosPosgrado /></ProtectedRoute>} />
-          <Route path="/datos/posgrado/mediciones" element={<ProtectedRoute roles={['administrador']}><MedicionesPos /></ProtectedRoute>} />
-          <Route path="/datos/posgrado/indicadores" element={<ProtectedRoute roles={['administrador']}><DatosAdmin /></ProtectedRoute>} />
-          <Route path="/datos/posgrado/equipos" element={<ProtectedRoute roles={['administrador']}><DatosAdmin /></ProtectedRoute>} />
-          <Route path="/datos/posgrado/grupos" element={<ProtectedRoute roles={['administrador']}><DatosAdmin /></ProtectedRoute>} />
+          <Route path="/datos/posgrado/mediciones" element={<ProtectedRoute roles={['posgrado']}><MedicionesPos /></ProtectedRoute>} />
+          <Route path="/datos/posgrado/indicadores" element={<ProtectedRoute roles={['posgrado']}><IndicadoresAdmin /></ProtectedRoute>} />
+          <Route path="/datos/posgrado/equipos" element={<ProtectedRoute roles={['posgrado']}><EquiposAdmin /></ProtectedRoute>} />
+          <Route path="/datos/posgrado/grupos" element={<ProtectedRoute roles={['posgrado']}><GruposAdmin /></ProtectedRoute>} />
 
           <Route path="/datos/administrador" element={<ProtectedRoute roles={['administrador']}><DatosAdmin /></ProtectedRoute>} />
           <Route path="/datos/administrador/mediciones" element={<ProtectedRoute roles={['administrador']}><MedicionesAdmin /></ProtectedRoute>} />
