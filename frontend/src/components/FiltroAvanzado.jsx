@@ -89,29 +89,30 @@ const FiltroAvanzado = ({ setShowPopup2, setMediciones, setLargeSearchWarning })
                 </button>
                 <h2 className="text-xl font-bold mb-4">Filtro avanzado</h2>
                 <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700">Año</label>
-                    <select
-                        value={yearFiltro}
-                        onChange={(e) => setYearFiltro(e.target.value)}
-                        className="mt-1 p-2 block w-full border border-lime-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                    >
-                        <option value="">. . .</option>
-                        {Array.from({ length: 2025 - 2019 + 1 }, (_, index) => 2019 + index).map((year) => (
-                            <option key={year} value={year}>
-                                {year}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-                <div className="mb-4">
+                <label className="block text-sm font-medium text-gray-700">Año</label>
+                <select
+                    value={yearFiltro}
+                    onChange={(e) => setYearFiltro(e.target.value)}
+                    className="mt-1 p-2 block w-full border text-gray-500 focus:text-black text-sm border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              
+                >
+                    <option value="">Seleccionar año</option>
+                    {Array.from({ length: 2025 - 2019 + 1 }, (_, index) => 2019 + index).map((year) => (
+                        <option key={year} value={year}>
+                            {year}
+                        </option>
+                    ))}
+                </select>
+            </div>
+            <div className="mb-4">
                 <label className="block text-sm font-medium text-gray-700">Mes</label>
                 <select
                     value={monthFiltro}
                     onChange={(e) => setMonthFiltro(e.target.value)}
-                    className="mt-1 p-2 block w-full border border-lime-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                   
+                    className="mt-1 p-2 block w-full border text-gray-500 focus:text-black text-sm border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    
                 >
-                    <option value="">. . .</option>
+                    <option value="">Seleccionar mes</option>
                     {Array.from({ length: 12 }, (_, index) => index + 1).map((month) => (
                         <option key={month} value={month.toString().padStart(2, '0')}>
                             {month.toString().padStart(2, '0')}
@@ -124,10 +125,10 @@ const FiltroAvanzado = ({ setShowPopup2, setMediciones, setLargeSearchWarning })
                 <select
                     value={dayFiltro}
                     onChange={(e) => setDayFiltro(e.target.value)}
-                    className="mt-1 p-2 block w-full border border-lime-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                    
+                    className="mt-1 p-2 block w-full border text-gray-500 focus:text-black text-sm border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                     
                 >
-                    <option value="">. . .</option>
+                    <option value="">Seleccionar día</option>
                     {Array.from({ length: 31 }, (_, index) => index + 1).map((day) => (
                         <option key={day} value={day.toString().padStart(2, '0')}>
                             {day.toString().padStart(2, '0')}
