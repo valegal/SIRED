@@ -45,7 +45,7 @@ const TablaGrupos = () => {
     
                 <input
                     type="text"
-                    placeholder="Buscar... 🔌"
+                    placeholder="Buscar... "
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
                     className="w-5/6 px-4 py-2 rounded-lg border border-lime-700 focus:border-2 focus:border-lime-500 mb-4"
