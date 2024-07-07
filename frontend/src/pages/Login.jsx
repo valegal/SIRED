@@ -61,7 +61,7 @@ function Login() {
       <div className="bg-white shadow-xl z-10 rounded-lg p-8 max-w-md w-full">
       
         <h2 className="text-2xl font-bold m-4 mb-2 text-center">Iniciar sesión | datos sistema GRIPV</h2>
-        <div className='mb-4 text-end text-xs hover:cursor-pointer text-green-700'>SIRED - VOLVER<Link className="w-12 h-12 p-2 ml-2 rounded-full bg-lime-100" to="/">👈</Link></div>
+        <div className='mb-4 text-end text-xs hover:cursor-pointer text-green-700'><Link className="w-12 h-12 px-2 text-xl mr-2 rounded-full bg-lime-100" to="/">⭠</Link>VOLVER</div>
         <form onSubmit={handleSubmit}>
           <div className="mb-8">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>

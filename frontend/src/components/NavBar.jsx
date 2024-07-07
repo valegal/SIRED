@@ -1,12 +1,44 @@
 import { Link } from "react-router-dom";
 
+const rol = localStorage.getItem('role');
+
 const Navbar = () => {
     return (
         <nav className="fixed top-0 left-0 right-0 z-10 flex justify-between items-center py-4 px-8 bg-transparent text-white">
           <div className="px-4">
           </div>
           <div className="text-5xl font-serif font-bond italic mx-auto pl-72 tracking-wide" style={{"text-shadow": "2px 2px 4px rgba(0, 0, 0, 0.5)"}}>SIRED</div>
-          <div>
+          
+
+          {rol ? (
+            <>
+              {rol === 'pregrado' && (
+                <div className="font-mono text-lime-500">
+                <div className="px-12 ml-40"></div>
+              <Link to="/datos/pregrado">
+                Usuario Pregrado
+              </Link>
+              </div>
+              )}
+              {rol === 'posgrado' && (
+                <div className="font-mono text-lime-500">
+                <div className="px-12 ml-40"></div>
+              <Link to="/datos/posgrado">
+                Usuario Posgrado
+              </Link>
+              </div>
+              )}
+              {rol === 'administrador' && (
+                <div className="font-mono text-lime-500">
+                  <div className="px-12 ml-40"></div>
+                <Link to="/datos/administrador">
+                  Usuario Administrador
+                </Link>
+                </div>
+              )}
+            </>
+          ) : (
+            <div>
             <Link to="/login">
             <button className="font-bold text-lg hover:bg-opacity-20 underline underline-offset-2 hover:bg-lime-200 hover:text-green-950 text-white py-2 px-4 rounded-lg mr-8">
               Iniciar sesión
@@ -18,6 +50,7 @@ const Navbar = () => {
             </button>
             </Link>
           </div>
+          )}
         </nav>
       );
     };
