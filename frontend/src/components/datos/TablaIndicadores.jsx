@@ -52,7 +52,7 @@ const Tablaindicadores = () => {
     );
 
     return (
-        <div className='flex flex-col items-center pb-4 pt-2'>
+        <div className='flex flex-col items-center pt-2'>
             {/* Filtro y botón de búsqueda */}
             <div className="flex flex-row items-center justify-beetwen">
                 <div className='flex font-mono italic text-lime-500 items-start mr-96 pr-24'>Tabla de indicadores</div>
@@ -90,35 +90,17 @@ const Tablaindicadores = () => {
                         {filteredIndicadores.map((indicador) => {
                             return (
                                 <tr key={indicador.idindicador} className="hover:bg-gray-100">
-                                    <td className=" text-center border">{indicador.idindicador}</td>
-                                    <td className=" pl-2 border">{indicador.nombre}</td>
-                                    <td className=" px-2  border">{indicador.posiciones}</td>
-                                    <td className="pl-2  border">{indicador.formula}</td>
+                                    <td className="text-center border">{indicador.idindicador}</td>
+                                    <td className="pl-2 border">{indicador.nombre}</td>
+                                    <td className=" px-2 border">{indicador.posiciones}</td>
+                                    <td className="pl-2 border">{indicador.formula}</td>
                                     <td className="text-center px-4 border">{indicador.grupos_idgrupo}</td>
                                 </tr>
                             );
                         })}
                     </tbody>
                 </table>
-                {/* <div className="flex justify-between mt-4 px-2 pb-4">
-                    <button
-                        className="bg-lime-200 hover:shadow-lg text-lime-900 italic font-bold py-2 px-4 rounded-full"
-                        onClick={() => setPaginaActual(paginaActual - 1)}
-                        disabled={paginaActual === 1}
-                    >
-                        Anterior
-                    </button>
-                    <div>
-                        Página {paginaActual} de {Math.ceil(conteo.total / indicadoresPorPagina)}
-                    </div>
-                    <button
-                        className="bg-lime-200 hover:shadow-lg text-lime-900 italic font-bold py-2 px-4 rounded-full"
-                        onClick={() => setPaginaActual(paginaActual + 1)}
-                        disabled={indicadores.length < indicadoresPorPagina}
-                    >
-                        Siguiente
-                    </button>
-                </div> */}
+                
             </div>
             <div
                 className={`fixed bottom-5 left-4 p-4 bg-slate-200 bg-opacity-20 shadow-md rounded-lg ${hovered ? 'scale-105' : ''}`}
