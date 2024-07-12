@@ -19,7 +19,7 @@ const ZoomSlider = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [currentIndex, images.length]);
@@ -58,11 +58,13 @@ const ZoomSlider = () => {
           ></span>
         ))}
       </div>
-      <div className="absolute inset-x-0 bottom-40 text-center">
+      
+      <div className="absolute inset-x-0 bottom-24 md:bottom-40 text-center">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-6xl py-5 px-2 font-bold bg-opacity-70 italic rounded-lg bg-lime-950 text-white decoration-black mb-6" style={{"text-shadow": "0 2px 4px rgba(0, 0, 0, 0.5)"}} >Semillero de Investigación en Recursos Energéticos Distribuidos</h1>
-          {/* <h2 className="text-xl font-semibold text-white font-sans drop-shadow-xl" style={{"text-shadow": "4px 4px 4px rgba(0, 0, 0, 0.8)"}}>Entender y estudiar los elementos y componentes para la integración de la generación distribuida en los Sistemas de Distribución de la Energía Eléctrica, considerando los procesos de consumo de los usuarios finales en las redes de explotación.</h2> */}
-          <img src="/uislogo.svg.png" alt="logo de la Universidad Industrial de santander"  className="mt-4 mx-auto my-4 w-auto h-24"/>
+          <h1 className="text-6xl py-5 px-2 font-bold bg-opacity-70 italic rounded-lg bg-lime-950 text-white mb-6" style={{ textShadow: "0 2px 4px rgba(0, 0, 0, 0.5)" }}>
+            Semillero de Investigación en Recursos Energéticos Distribuidos
+          </h1>
+          <img src="/uislogo.svg.png" alt="logo de la Universidad Industrial de Santander" className="mt-4 mx-auto my-4 w-auto h-24" />
           
           {rol ? (
             <>
