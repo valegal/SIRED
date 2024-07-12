@@ -43,7 +43,7 @@ const Registro = () => {
 
     try {
       // Verificar si el email ya está registrado
-      const res = await axios.get('http://localhost:8081/usuarios');
+      const res = await axios.get('${import.meta.env.VITE_API_URL}/usuarios');
 
 
       const existEmail = res.data.some(userEmail => userEmail === values.email);
@@ -53,7 +53,7 @@ const Registro = () => {
       }
 
       // Registrar nuevo usuario
-      const registerRes = await axios.post('http://localhost:8081/registro', values);
+      const registerRes = await axios.post('${import.meta.env.VITE_API_URL}/registro', values);
      
 
       if (registerRes.status === 201) {
@@ -61,7 +61,7 @@ const Registro = () => {
 
         // Autenticar al usuario después del registro
         try {
-          const loginRes = await axios.post('http://localhost:8081/login', {
+          const loginRes = await axios.post('${import.meta.env.VITE_API_URL}/login', {
             email: values.email,
             password: values.password
           });

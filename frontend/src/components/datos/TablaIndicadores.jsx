@@ -19,7 +19,7 @@ const Tablaindicadores = () => {
     useEffect(() => {
         const obtenerindicadores = async () => {
             try {
-                const response = await axios.get(`http://localhost:8081/indicadores`);
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}/indicadores`);
                 setindicadores(response.data);
             } catch (error) {
                 console.error('Error al obtener indicadores:', error);
@@ -32,7 +32,7 @@ const Tablaindicadores = () => {
     useEffect(() => {
         const obtenerConteo = async () => {
             try {
-                const response = await axios.get(`http://localhost:8081/indicadoresconteo`);
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}/indicadoresconteo`);
                 setConteo(response.data);
             } catch (error) {
                 console.error('Error al obtener el conteo de indicadores:', error.message);

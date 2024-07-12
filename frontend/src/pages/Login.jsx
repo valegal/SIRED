@@ -13,7 +13,7 @@ function Login() {
     
     const handleSubmit = (event) => {
       event.preventDefault();
-      axios.post('http://localhost:8081/login', values)
+      axios.post('${import.meta.env.VITE_API_URL}/login', values)
           .then(res => {
               if (res.status === 200) {
                   localStorage.setItem('token', res.data.token);

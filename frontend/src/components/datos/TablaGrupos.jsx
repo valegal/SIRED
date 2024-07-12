@@ -9,7 +9,7 @@ const TablaGrupos = () => {
     useEffect(() => {
         const obtenerGrupos = async () => {
             try {
-                const response = await axios.get(`http://localhost:8081/grupos`);
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}/grupos`);
                 setGrupos(response.data);
             } catch (error) {
                 console.error('Error al obtener grupos:', error);
@@ -18,7 +18,7 @@ const TablaGrupos = () => {
 
         const obtenerHas = async () => {
             try {
-                const response = await axios.get(`http://localhost:8081/has`);
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}/has`);
                 setHas(response.data);
             } catch (error) {
                 console.error('Error al obtener equipos_has_grupos:', error.message);

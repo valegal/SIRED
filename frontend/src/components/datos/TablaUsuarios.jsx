@@ -16,7 +16,7 @@ const TablaUsuarios = () => {
   useEffect(() => {
     const obtenerUsuarios = async () => {
       try {
-        const response = await axios.get('http://localhost:8081/usuarios/todos');
+        const response = await axios.get('${import.meta.env.VITE_API_URL}/usuarios/todos');
         setUsuarios(response.data);
       } catch (error) {
         console.error('Error al obtener usuarios:', error);
@@ -39,7 +39,7 @@ const TablaUsuarios = () => {
 
     if (confirmacion.isConfirmed) {
       try {
-        await axios.delete(`http://localhost:8081/usuarios/${id}`);
+        await axios.delete(`${import.meta.env.VITE_API_URL}/usuarios/${id}`);
         const nuevosUsuarios = usuarios.filter(usuario => usuario.id !== id);
         setUsuarios(nuevosUsuarios);
         Swal.fire('¡Eliminado!', 'El usuario ha sido eliminado.', 'success');
@@ -70,7 +70,7 @@ const TablaUsuarios = () => {
   
     if (newRole) {
       try {
-        await axios.put(`http://localhost:8081/usuarios/${id}/role`, { role: newRole });
+        await axios.put(`${import.meta.env.VITE_API_URL}/usuarios/${id}/role`, { role: newRole });
         const updatedUsuarios = usuarios.map((usuario) =>
           usuario.id === id ? { ...usuario, role: newRole } : usuario
         );

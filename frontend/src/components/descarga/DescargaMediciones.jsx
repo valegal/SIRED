@@ -52,8 +52,8 @@ const DescargarMediciones = ({ setLargeSearchWarning }) => {
             setIsLoading(true); // Iniciar el indicador de carga
 
             const endpoint = descargarTodos
-                ? 'http://localhost:8081/medicionestodas'
-                : 'http://localhost:8081/medicionesfiltroavanzado';
+                ? '${import.meta.env.VITE_API_URL}/medicionestodas'
+                : '${import.meta.env.VITE_API_URL}/medicionesfiltroavanzado';
             const params = descargarTodos
                 ? {}
                 : {
