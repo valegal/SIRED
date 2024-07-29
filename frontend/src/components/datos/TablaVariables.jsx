@@ -58,7 +58,7 @@ const TablaVariables = ({ idMedicion, variablesMedicion }) => {
                     const variablesData = await variablesResponse.json();
 
                     // Segunda petición para obtener datos específicos para 'Valor'
-                    const valuesResponse = await fetch(`${import.meta.env.VITE_API_URL}/variables/${idMedicion}`);
+                    const valuesResponse = await fetch(`http://localhost:8081/variables/${idMedicion}`);
                     if (!valuesResponse.ok) {
                         const errorText = await valuesResponse.text();
                         throw new Error(`Failed to fetch variable values: ${errorText}`);

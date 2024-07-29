@@ -25,7 +25,7 @@ const TablaMediciones = () => {
     useEffect(() => {
         const obtenerMediciones = async () => {
             try {
-                const response = await axios.get(`${import.meta.env.VITE_API_URL}/mediciones?page=${paginaActual}&limit=${medicionesPorPagina}&filtro=${filtro}`);
+                const response = await axios.get(`http://localhost:8081/mediciones?page=${paginaActual}&limit=${medicionesPorPagina}&filtro=${filtro}`);
                 setMediciones(response.data);
             } catch (error) {
                 console.error('Error al obtener mediciones:', error);
@@ -38,7 +38,7 @@ const TablaMediciones = () => {
     useEffect(() => {
         const obtenerConteo = async () => {
             try {
-                const response = await axios.get(`${import.meta.env.VITE_API_URL}/medicionesconteo`);
+                const response = await axios.get(`http://localhost:8081/medicionesconteo`);
                 setConteo(response.data);
             } catch (error) {
                 console.error('Error al obtener el conteo de mediciones:', error.message);
@@ -50,7 +50,7 @@ const TablaMediciones = () => {
 
     const handleVerMas = async (idMedicion, equipos) => {
         try {
-            const response = await axios.get(`${import.meta.env.VITE_API_URL}/variables/${idMedicion}`);
+            const response = await axios.get(`http://localhost:8081/variables/${idMedicion}`);
             // eslint-disable-next-line no-unused-vars
             const variables = response.data.variables ? response.data.variables.join(';') : '';
 

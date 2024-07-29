@@ -17,7 +17,7 @@ function IndicadoresAdmin() {
     };
 
     const handleDownload = async () => {
-        const url = '${import.meta.env.VITE_API_URL}/indicadores';
+        const url = 'http://localhost:8081/indicadores';
 
         try {
             // Realizar la solicitud HTTP GET usando axios

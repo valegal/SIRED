@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 function Logout() {
     const handleLogout = async () => {
         try {
-            await axios.get('${import.meta.env.VITE_API_URL}/logout');
+            await axios.get('http://localhost:8081/logout');
             localStorage.removeItem('token'); 
             localStorage.removeItem('role'); 
             window.location.reload(); 

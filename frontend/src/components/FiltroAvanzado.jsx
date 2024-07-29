@@ -45,7 +45,7 @@ const FiltroAvanzado = ({ setShowPopup2, setMediciones, setLargeSearchWarning })
         }
 
         try {
-            const response = await axios.get(`${import.meta.env.VITE_API_URL}/medicionesfiltroavanzado`, {
+            const response = await axios.get(`http://localhost:8081/medicionesfiltroavanzado`, {
                 params: {
                     year: yearFiltro,
                     month: monthFiltro,
