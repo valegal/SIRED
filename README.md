@@ -15,11 +15,11 @@ Se ejecuta el script MySQL y luego se configura de forma local para que coincida
 
 La carpeta frontend contiene la parte del cliente de la plataforma, creada con el servidor de desarrollo local ViteJS para el framework React, para inicializarla es necesario tener NodeJS instalado, luego la consola ubicada en el directorio frontend se instala el gestor de paquetes y las librerias necesarias como axios (Cliente HTTP basado en promesas para node.js y el navegador) o chakra-ui (para el UX/UI).
 
-        ```
-        npm i
-        npm i @chakra-ui/toast
-        npm install axios
-        ```
+```
+npm i
+npm i @chakra-ui/toast
+npm install axios
+```
 
 - Para levantar el servidor cliente en el puerto http://localhost:5173/ se puede utilizar `npm run dev`.
 
@@ -31,19 +31,19 @@ La parte del servidor fue creada con NodeJS y el entorno de trabajo para aplicac
 
 - Variables de entorno para producción:
 
-        ```
-        PORT=22
+```
+PORT=22
 
-        DB_HOST=10.1.81.226
+DB_HOST=10.1.81.226
 
-        DB_USER=sired
+DB_USER=sired
 
-        DB_PASSWORD=sired*e3t
+DB_PASSWORD=sired*e3t
 
-        DB_NAME=sistemagripv
-        
-        JWT_SECRET=secreto
-        ```
+DB_NAME=sistemagripv
+
+JWT_SECRET=secreto
+```
 
 - Configuración de nginx (es un servidor web que también puede ser usado como proxy inverso):
        
