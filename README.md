@@ -7,7 +7,8 @@ Este repositorio cuenta con tres folders principales: LocalTestDB | frontend | s
 ### LocalTestDB
 
 En el directorio LocalTestDB se encuentra una copia de testeo de la base de datos del sistemagrivp almacenador en el servidor del semillero SIRED, con esta copia reducida se puede crear una versión local para las diferentes pruebas de la plataforma, la base de datos se llama 'valeg' y tiene seis tablas 'equipos', 'equipos_has_grupos', 'grupos', 'indicadores', 'mediciones', 'usuarios'. El siguiente es el diagrama Entidad-Relación.
-![ER Diagram](/LocalTestDB/image.png =300x400)
+![ER Diagram](/LocalTestDB/image.png)
+<img src="/LocalTestDB/image.png" width="300" height="400">
 
 Se ejecuta el script MySQL y luego se configura de forma local para que coincida con las configuraciones dentro de la conexión a la base de datos (y las variables de entorno) que se escribió en los archivos 'db.js' y 'server.js' dentro del directorio /server.
 
