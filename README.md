@@ -33,15 +33,10 @@ La parte del servidor fue creada con NodeJS y el entorno de trabajo para aplicac
 
 ```
 PORT=22
-
 DB_HOST=10.1.81.226
-
 DB_USER=sired
-
 DB_PASSWORD=sired*e3t
-
 DB_NAME=sistemagripv
-
 JWT_SECRET=secreto
 ```
 
